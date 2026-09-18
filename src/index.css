@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: var(--color-gray-50);
+  --foreground: var(--color-gray-950);
+
+  --surface: var(--color-gray-100);
+  --surface-foreground: var(--color-gray-950);
+
+  --card: #ffffff;
+  --card-foreground: var(--color-gray-950);
+
+  --muted: var(--color-gray-100);
+  --muted-foreground: var(--color-gray-500);
+
+  --border: var(--color-gray-200);
+  --input: var(--color-gray-300);
+  --ring: var(--color-gray-500);
+
+  --primary: var(--color-gray-950);
+  --primary-foreground: var(--color-gray-50);
+
+  --secondary: var(--color-gray-200);
+  --secondary-foreground: var(--color-gray-950);
+
+  --accent: var(--color-gray-200);
+  --accent-foreground: var(--color-gray-950);
+}
+
+.dark {
+  --background: var(--color-gray-950);
+  --foreground: var(--color-gray-100);
+
+  --surface: var(--color-gray-900);
+  --surface-foreground: var(--color-gray-100);
+
+  --card: var(--color-gray-900);
+  --card-foreground: var(--color-gray-100);
+
+  --muted: var(--color-gray-800);
+  --muted-foreground: var(--color-gray-400);
+
+  --border: var(--color-gray-800);
+  --input: var(--color-gray-700);
+  --ring: var(--color-gray-400);
+
+  --primary: var(--color-gray-100);
+  --primary-foreground: var(--color-gray-950);
+
+  --secondary: var(--color-gray-800);
+  --secondary-foreground: var(--color-gray-100);
+
+  --accent: var(--color-gray-700);
+  --accent-foreground: var(--color-gray-100);
+}
+
+@theme {
+    --font-sans: "Noto Sans", sans-serif;
+    --text-base: 1rem;
+}
