@@ -7,31 +7,31 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen bg-background text-foreground px-15">
       <Navbar />
 
-      <main>
-        <section id="home">
+      <main className="w-full">
+        <section id="hero" className="bg-background w-full min-h-screen">
           <Hero />
         </section>
 
-        <section id="about">
+        <section id="about" className="bg-surface min-h-screen py-20">
           <About />
         </section>
 
-        <section id="projects">
+        <section id="projects" className="bg-background py-24">
           <Projects />
         </section>
 
-        <section id="skills">
+        <section id="skills" className="bg-surface py-24">
           <Skills />
         </section>
 
-        <section id="contact">
+        <section id="contact" className="bg-background min-h-screen">
           <Contact />
         </section>
       </main>
-    </>
+    </div>
   );
 }
 
