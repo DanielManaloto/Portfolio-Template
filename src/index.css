@@ -77,4 +77,8 @@
   p {
     @apply text-base leading-relaxed text-gray-600;
   }
+  
+  button {
+    @apply border rounded-4xl py-1 px-4 whitespace-nowrap
+  }
 }
