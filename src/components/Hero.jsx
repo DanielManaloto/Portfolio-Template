@@ -5,12 +5,14 @@ const developerCode = (
     <span className="text-blue-400">const</span>{" "}
     <span className="text-yellow-300">developer</span> = {"{"}
     {"\n  "}
-    <span>name:   </span>
-    <span className="text-green-400">"Daniel Manaloto"</span>{","}
+    <span>name: </span>
+    <span className="text-green-400">"Daniel Manaloto"</span>
+    {","}
     {"\n  "}
-    <span>writes: </span>{"["}
+    <span>writes: </span>
+    {"["}
     <span className="text-green-400">"HTML", "CSS", "JavaScript",</span>
-    {"\n           "} 
+    {"\n           "}
     <span className="text-green-400">"Python", "C / C++"</span> {"],"}
     {"\n  "}
     <span>status: </span>
@@ -21,8 +23,8 @@ const developerCode = (
 
 function Hero() {
   return (
-    <div className="min-h-screen w-full flex gap-10 items-center justify-between pt-16">
-      <div className="flex flex-col gap-3 w-125">
+    <div className="min-h-screen w-full flex max-sm:flex-col gap-10 items-center justify-between pt-16">
+      <div className="flex flex-col gap-3 w-full">
         <h1>Daniel Manaloto</h1>
         <h3>BSECE Graduate · Software Dev · Web Dev</h3>
 
@@ -42,27 +44,28 @@ function Hero() {
           </button>
         </div>
       </div>
-
-      <IDE
-        width="30rem"
-        height="15rem"
-        tabs={[
-          {
-            name: "developer.js",
-            language: "JS",
-            active: true,
-            closable: true,
-          },
-          {
-            name: "index.js",
-            language: "JS",
-            active: false,
-            closable: true,
-          },
-        ]}
-        lineCount={7}
-        code={developerCode}
-      />
+      <div className="w-full max-w-[30rem]">
+        <IDE
+          width="100%"
+          height="15rem"
+          tabs={[
+            {
+              name: "developer.js",
+              language: "JS",
+              active: true,
+              closable: true,
+            },
+            {
+              name: "index.js",
+              language: "JS",
+              active: false,
+              closable: true,
+            },
+          ]}
+          lineCount={7}
+          code={developerCode}
+        />
+      </div>
     </div>
   );
 }

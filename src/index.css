@@ -79,6 +79,6 @@
   }
   
   button {
-    @apply border rounded-4xl py-1 px-4 whitespace-nowrap
+    @apply border rounded-4xl py-1 px-4 whitespace-nowrap hover:cursor-pointer hover:brightness-200
   }
 }

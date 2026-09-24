@@ -2,9 +2,9 @@ function About() {
   return (
     <>
       <div>
-        <h1 className="mb-8">Lorem ipsum dolor sit amet.</h1>
-        <div className="flex justify-between">
-          <div>
+        <h1 className="mb-10">Lorem ipsum dolor sit amet.</h1>
+        <div className="flex max-sm:flex-col justify-between">
+          <div className="bg-white h-50">
             <p>image placeholder</p>
           </div>
           <div className="w-[50%] flex flex-col">

@@ -11,24 +11,13 @@ const skillCardContent = [
     fileExtension: ".html",
     color: "#E4572E",
     confidence: 5,
-    lineCount: 6,
+    lineCount: 4,
     code: [
-      { text: "<nav aria-label=", className: "text-sky-400" },
-      { text: '"Main"', className: "text-emerald-400" },
-      {
-        text: '>\n  <ul>\n    <li><a href=',
-        className: "text-sky-400",
-      },
-      { text: '"/projects"', className: "text-emerald-400" },
-      {
-        text: ">Projects</a></li>\n    <li><a href=",
-        className: "text-sky-400",
-      },
-      { text: '"/contact"', className: "text-emerald-400" },
-      {
-        text: ">Contact</a></li>\n  </ul>\n</nav>",
-        className: "text-sky-400",
-      },
+      { text: "<header>\n  <h1>", className: "text-sky-400" },
+      { text: "Alex Santos", className: "" },
+      { text: "</h1>\n  <p>", className: "text-sky-400" },
+      { text: "Web developer", className: "" },
+      { text: "</p>\n</header>", className: "text-sky-400" },
     ],
     useWith:
       "Semantic page structure, accessible forms, and the landmarks that search engines and screen readers rely on.",
@@ -42,14 +31,11 @@ const skillCardContent = [
     fileExtension: ".css",
     color: "#2F6FED",
     confidence: 4,
-    lineCount: 5,
+    lineCount: 4,
     code: [
       { text: ".card {\n  display: grid;\n  gap: ", className: "" },
-      { text: "var(--space-3)", className: "text-sky-400" },
-      {
-        text: ";\n  container-type: inline-size;\n}",
-        className: "",
-      },
+      { text: "var(--gap)", className: "text-sky-400" },
+      { text: ";\n  padding: 1rem;\n}", className: "" },
     ],
     useWith:
       "Grid and flexbox layouts, custom properties for theming, and container queries.",
@@ -63,21 +49,14 @@ const skillCardContent = [
     fileExtension: ".js",
     color: "#E0A800",
     confidence: 5,
-    lineCount: 5,
+    lineCount: 4,
     code: [
       { text: "async function ", className: "text-sky-400" },
-      { text: "loadProjects", className: "text-amber-300" },
+      { text: "getData", className: "text-amber-300" },
       {
-        text: "() {\n  const res = await fetch(",
+        text: "() {\n  const res = await fetch(url);\n  return res.json();\n}",
         className: "",
       },
-      { text: '"/api/projects"', className: "text-emerald-400" },
-      {
-        text: ");\n  if (!res.ok) throw new Error(",
-        className: "",
-      },
-      { text: '"Request failed"', className: "text-emerald-400" },
-      { text: ");\n  return res.json();\n}", className: "" },
     ],
     useWith:
       "DOM scripting, async data fetching, form validation, and small Node.js services.",
@@ -91,24 +70,15 @@ const skillCardContent = [
     fileExtension: ".jsx",
     color: "#16A5C6",
     confidence: 4,
-    lineCount: 7,
+    lineCount: 3,
     code: [
       { text: "function ", className: "text-sky-400" },
-      { text: "SkillTag", className: "text-amber-300" },
-      {
-        text: "({ name }) {\n  const [open, setOpen] = ",
-        className: "",
-      },
-      { text: "useState", className: "text-amber-300" },
-      { text: "(false);\n  return (\n    ", className: "" },
-      { text: "<button ", className: "text-sky-400" },
-      { text: "onClick", className: "" },
-      { text: "={() => setOpen(!open)}", className: "" },
-      {
-        text: ">\n      {name}\n    </button>",
-        className: "text-sky-400",
-      },
-      { text: "\n  );\n}", className: "" },
+      { text: "Skill", className: "text-amber-300" },
+      { text: "({ name }) {\n  return ", className: "" },
+      { text: "<li>", className: "text-sky-400" },
+      { text: "{name}", className: "" },
+      { text: "</li>", className: "text-sky-400" },
+      { text: ";\n}", className: "" },
     ],
     useWith:
       "React components with hooks and props, state management, and reusable UI libraries.",
@@ -121,13 +91,12 @@ const skillCardContent = [
     fileExtension: ".py",
     color: "#2E9E5B",
     confidence: 4,
-    lineCount: 5,
+    lineCount: 2,
     code: [
       { text: "def ", className: "text-sky-400" },
-      { text: "moving_average", className: "text-amber-300" },
+      { text: "average", className: "text-amber-300" },
       {
-        text:
-          "(values, n):\n    return [\n        sum(values[i:i + n]) / n\n        for i in range(len(values) - n + 1)\n    ]",
+        text: "(nums):\n    return sum(nums) / len(nums)",
         className: "",
       },
     ],
@@ -143,13 +112,12 @@ const skillCardContent = [
     fileExtension: ".c",
     color: "#6A5ACD",
     confidence: 3,
-    lineCount: 5,
+    lineCount: 4,
     code: [
       { text: "int *", className: "text-sky-400" },
-      { text: "make_buffer", className: "text-amber-300" },
+      { text: "make", className: "text-amber-300" },
       {
-        text:
-          "(size_t n) {\n  int *buf = malloc(n * sizeof(int));\n  if (!buf) return NULL;\n  return buf;\n}",
+        text: "(int n) {\n  int *p = malloc(n);\n  return p;\n}",
         className: "",
       },
     ],
@@ -167,12 +135,12 @@ const findSkill = (ext) =>
 const SkillCard = ({ skill, onSelect }) => {
   return (
     <div
-      className="grid gap-8 overflow-hidden rounded-2xl border-t-4 bg-white p-6 shadow-sm ring-1 ring-slate-200 md:grid-cols-[1.3fr_1fr] md:p-8"
+      className="grid gap-6 overflow-hidden rounded-2xl border-t-4 bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6 md:grid-cols-[1.3fr_1fr] md:gap-8 md:p-8"
       style={{ borderTopColor: skill.color }}
     >
       <div className="flex flex-col gap-5">
-        <div className="flex flex-wrap items-end gap-4">
-          <h3 className="text-4xl font-bold leading-none tracking-tight text-slate-900 md:text-5xl">
+        <div className="flex flex-wrap items-end gap-3">
+          <h3 className="text-3xl font-bold leading-none tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
             {skill.language}
           </h3>
           <span
@@ -201,7 +169,7 @@ const SkillCard = ({ skill, onSelect }) => {
 
         <IDE
           width="100%"
-          height="13rem"
+          height="8rem"
           tabs={[]}
           lineCount={skill.lineCount}
           code={skill.code.map((token, index) => (
@@ -265,12 +233,11 @@ function Skills() {
     setSelectedId(event.target.value);
   };
 
-  // Percentage for the progress bar, evenly spaced across every stop.
   const progressPercentage =
     (selectedIndex / (skillCardContent.length - 1)) * 100;
 
   return (
-    <section className="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-12 md:px-0">
+    <section className="mx-auto flex w-full max-w-4xl flex-col gap-10 py-12">
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
           Six languages, from the browser to the machine
@@ -283,8 +250,8 @@ function Skills() {
       </div>
 
       {/* Language selector */}
-      <div className="flex flex-col gap-10">
-        <div className="relative flex h-11 items-center justify-between">
+      <div className="flex flex-col gap-5">
+        <div className="relative flex h-10 items-center justify-between sm:h-11">
           <div className="absolute inset-x-0 top-1/2 h-1 -translate-y-1/2 rounded-full bg-slate-200" />
           <div
             className="absolute left-0 top-1/2 h-1 -translate-y-1/2 rounded-full transition-all duration-500 ease-in-out"
@@ -300,7 +267,7 @@ function Skills() {
             return (
               <label
                 key={skill.id}
-                className="relative flex h-6 w-6 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 focus-within:ring-offset-2"
+                className="relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 focus-within:ring-offset-2 sm:h-11 sm:w-11"
                 style={
                   isSelected
                     ? { "--tw-ring-color": skill.color }
@@ -324,7 +291,7 @@ function Skills() {
                   }}
                 />
                 <span
-                  className={`pointer-events-none absolute whitespace-nowrap font-mono text-sm ${
+                  className={`pointer-events-none absolute left-1/2 -translate-x-1/2 whitespace-nowrap font-mono text-xs sm:text-sm ${
                     labelAbove ? "bottom-full mb-2" : "top-full mt-2"
                   } ${isSelected ? "font-medium text-slate-900" : "text-slate-500"}`}
                 >
@@ -335,7 +302,7 @@ function Skills() {
           })}
         </div>
 
-        <div className="flex justify-between text-sm text-slate-500 md:mt-4">
+        <div className="mt-8 flex justify-between text-xs text-slate-500 sm:text-sm md:mt-4">
           <span>Runs in the browser</span>
           <span>Runs close to the hardware</span>
         </div>

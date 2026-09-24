@@ -65,7 +65,7 @@ function Projects() {
       <p>A collection of projects I've worked on.</p>
 
       {/* Filters */}
-      <div className="flex gap-1 pb-4 border-b border-gray-300 text-sm">
+      <div className="flex flex-wrap gap-1 pb-4 border-b border-gray-300 text-sm">
         {filters.map((item) => (
           <button
             key={item}
@@ -87,11 +87,11 @@ function Projects() {
         {filteredProjects.map((project) => (
           <div
             key={project.name}
-            className="grid grid-cols-[200px_1fr] gap-6 border-b border-gray-300 pb-6"
+            className="grid sm:grid-cols-[200px_1fr] gap-6 border-b border-gray-300 pb-6"
           >
             
             {/* Image */}
-            <div className="h-50 w-50 border border-gray-400">
+            <div className="h-50 w-full border border-gray-400 self-center">
               
               <span>Image Placeholder</span>
             </div>
@@ -114,6 +114,7 @@ function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:underline"
                   >
                     
                     Live Code
@@ -123,6 +124,7 @@ function Projects() {
                   href={project.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:underline"
                 >
                   
                   Source Code
