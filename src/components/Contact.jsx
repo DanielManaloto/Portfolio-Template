@@ -34,8 +34,8 @@ function Contact() {
 
         <div className="w-full">
           {/* Email */}
-          <div className="flex flex-col gap-2 border-y border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-32">Email</span>
+          <div className="flex flex-col gap-2 border-y border-gray-300 p-3 md:flex-row sm:items-center sm:gap-4">
+            <span className="shrink-0 font-medium sm:w-16">Email</span>
 
             <span className="min-w-0 break-all text-sm sm:text-base">
               mrs11.djmanaloto@gmail.com
@@ -51,20 +51,20 @@ function Contact() {
 
           {/* Github */}
           <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-32">Github</span>
+            <span className="shrink-0 font-medium sm:w-16">Github</span>
 
-            <span className="min-w-0 break-all text-sm sm:text-base">
+            <a href="https://www.github.com/DanielManaloto" className="min-w-0 break-all text-sm sm:text-base">
               github.com/DanielManaloto
-            </span>
+            </a>
           </div>
 
           {/* LinkedIn */}
           <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-32">LinkedIn</span>
+            <span className="shrink-0 font-medium sm:w-16">LinkedIn</span>
 
-            <span className="min-w-0 break-all text-sm sm:text-base">
+            <a href="https://www.linkedin.com/in/daniel-james-manaloto-71a353318/" className="min-w-0 break-all text-sm sm:text-base">
               https://www.linkedin.com/in/daniel-james-manaloto-71a353318/
-            </span>
+            </a>
           </div>
         </div>
       </div>

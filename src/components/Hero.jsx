@@ -35,13 +35,19 @@ function Hero() {
         </p>
 
         <div className="flex gap-5">
-          <button className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap">
+          <a
+            href="#contact"
+            className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap"
+          >
             See Contacts
-          </button>
+          </a>
 
-          <button className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap">
+          <a
+            href="#projects"
+            className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap"
+          >
             See my Projects
-          </button>
+          </a>
         </div>
       </div>
       <div className="w-full max-w-[30rem]">

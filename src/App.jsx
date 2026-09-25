@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-gray-100 text-foreground sm:px-60 px-5">
+    <div className="w-full min-h-screen bg-gray-100 text-foreground sm:px-55 px-5">
       <Navbar />
 
       <main className="w-full">

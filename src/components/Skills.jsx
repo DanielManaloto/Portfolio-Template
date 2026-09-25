@@ -1,9 +1,6 @@
 import { useState } from "react";
 import IDE from "./IDE";
 
-// Each language gets its own accent color instead of one color for
-// everything, and its own line count so the IDE's line numbers match
-// the code that's actually shown.
 const skillCardContent = [
   {
     id: "html",
@@ -135,7 +132,7 @@ const findSkill = (ext) =>
 const SkillCard = ({ skill, onSelect }) => {
   return (
     <div
-      className="grid gap-6 overflow-hidden rounded-2xl border-t-4 bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6 md:grid-cols-[1.3fr_1fr] md:gap-8 md:p-8"
+      className="grid gap-6 overflow-hidden rounded-2xl border-t-4 bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6 lg:grid-cols-[1.3fr_1fr] md:gap-8 md:p-8"
       style={{ borderTopColor: skill.color }}
     >
       <div className="flex flex-col gap-5">
@@ -180,7 +177,7 @@ const SkillCard = ({ skill, onSelect }) => {
         />
       </div>
 
-      <div className="flex flex-col gap-5 md:border-l md:border-slate-200 md:pl-8">
+      <div className="flex flex-col gap-5 lg:border-l lg:border-slate-200 lg:pl-8">
         <div>
           <h4 className="mb-1 text-sm font-semibold text-slate-500">
             What I use it for
