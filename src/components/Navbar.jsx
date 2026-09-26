@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CircleBadge from './CircleBadge';
 
 const navItems = [
   { name: "Hero", href: "#hero" },
@@ -12,16 +13,17 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-md
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 backdrop-blur-md
     sm:px-55 px-5">
       <div className="mx-auto flex h-16 w-full items-center justify-between">
         {/* Logo */}
         <a
           href="#hero"
-          className="text-xl font-bold text-white"
+          className="flex items-center gap-2 text-xl font-bold text-gray-900"
           onClick={() => setIsOpen(false)}
         >
-          MyPortfolio
+          <CircleBadge size={40} fontSize="80"/>
+          Daniel Manaloto
         </a>
 
         {/* Desktop Navigation */}
@@ -30,7 +32,7 @@ function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white"
+              className="text-sm font-medium text-gray-900 transition-colors duration-200 hover:text-gray-500"
             >
               {item.name}
             </a>
