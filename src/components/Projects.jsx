@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProjectPreview from "./ProjectPreview";
 
 const projectList = [
   {
@@ -8,6 +9,7 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://example.com",
     sourceUrl: "https://github.com/example/portfolio",
+    images: [],
   },
   {
     name: "Bitmap Image Viewer",
@@ -19,6 +21,7 @@ const projectList = [
     liveUrl: "",
     sourceUrl:
       "https://github.com/DanielManaloto/my_projects/tree/main/bmp_viewer",
+    images: [],
   },
   {
     name: "LC-3 Virtual Machine (Python)",
@@ -29,6 +32,7 @@ const projectList = [
     hasLive: false,
     sourceUrl:
       "https://github.com/DanielManaloto/my_projects/tree/main/python_lc3",
+    images: [],
   },
   {
     name: "PH Acquired Properties Scraper",
@@ -36,6 +40,7 @@ const projectList = [
     language: ["Python"],
     hasLive: false,
     sourceUrl: "https://github.com/DanielManaloto/my_projects/tree/main/ph-acquired-properties-scraper",
+    images: [],
   },
   {
     name: "TLS Analyzer",
@@ -43,6 +48,16 @@ const projectList = [
     language: ["C", "C++"],
     hasLive: false,
     sourceUrl: "https://github.com/DanielManaloto/TLS-Analyzer",
+    images: [
+              "/TLS-Analyzer/TLS_ANALYZER_LOGO.png",
+              "/TLS-Analyzer/Capture1.PNG",
+              "/TLS-Analyzer/Capture2.PNG",
+              "/TLS-Analyzer/Capture3.PNG",
+              "/TLS-Analyzer/Capture4.PNG",
+              "/TLS-Analyzer/Capture5.PNG",
+              "/TLS-Analyzer/Capture6.PNG",
+              "/TLS-Analyzer/architecture-diagram.svg "
+    ],
   },
   {
     name: "WinEventHook",
@@ -51,6 +66,7 @@ const projectList = [
     language: ["C"],
     hasLive: false,
     sourceUrl: "https://github.com/DanielManaloto/WinEventHook",
+    images: [],
   },
   {
     name: "Todo App",
@@ -61,6 +77,12 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-todo-app-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
+    images: [
+      "/Todo-App/desktop-design-light.png",
+      "/Todo-App/desktop-design-dark.png",
+      "/Todo-App/mobile-design-light.png",
+      "/Todo-App/mobile-design-dark.png",
+    ],
   },
   {
     name: "Weather App",
@@ -71,6 +93,14 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-weather-app-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
+    images: [
+      "/Weather-App/desktop-design-metric.png",
+      "/Weather-App/desktop-design-imperial.png",
+      "/Weather-App/mobile-design.png",
+      "/Weather-App/no-result-state.png",
+      "/Weather-App/loading-state.png",
+      "/Weather-App/dropdown-state.png",
+    ],
   },
   {
     name: "Order Summary Card",
@@ -80,6 +110,7 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-order-summary-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
+    images: [],
   },
   {
     name: "Interactive Rating Component",
@@ -89,6 +120,13 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-rating-component-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
+    images: [
+      "/Interactive-Rating/desktop-design.png",
+      "/Interactive-Rating/desktop-thankyou-state.png",
+      "/Interactive-Rating/active-state.png",
+      "/Interactive-Rating/mobile-design.png",
+      "/Interactive-Rating/mobile-thankyou-state.png",
+    ],
   },
   {
     name: "Bento Grid",
@@ -98,6 +136,7 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-bento-grid-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
+    images: ["/Bento-Grid/desktop-design.png", "/Bento-Grid/mobile-design.png"],
   },
   {
     name: "Age Calculator App",
@@ -107,11 +146,15 @@ const projectList = [
     hasLive: true,
     liveUrl: "https://your-age-calculator-url.com",
     sourceUrl: "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
-  }
+    images: ["/Age-Calculator/preview.jpg"],
+  },
 ];
+
+
 
 function Projects() {
   const [filter, setFilter] = useState("All");
+  const [previewProject, setPreviewProject] = useState(null);
 
   const filters = ["All", "HTML / CSS / JS", "JSX", "Python", "C / C++"];
 
@@ -165,10 +208,30 @@ function Projects() {
             key={project.name}
             className="grid sm:grid-cols-[200px_1fr] gap-6 border-b border-gray-300 pb-6"
           >
-            {/* Image */}
-            <div className="h-50 w-full border border-gray-400 self-center">
-              <span>Image Placeholder</span>
-            </div>
+            {/* Image / preview trigger */}
+            <button
+              onClick={() => setPreviewProject(project)}
+              className="group relative h-50 w-full overflow-hidden self-center border border-gray-400 text-left"
+            >
+              {project.images[0] ? (
+                <img
+                  src={project.images[0]}
+                  alt={project.name}
+                  className="h-full w-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+              ) : (
+                <span className="flex h-full w-full items-center justify-center text-sm text-gray-500">
+                  Image Placeholder
+                </span>
+              )}
+              <span className="absolute inset-0 flex items-center justify-center bg-black/0 text-sm text-white opacity-0 transition group-hover:bg-black/40 group-hover:opacity-100">
+                Preview
+              </span>
+            </button>
+
             {/* Project information */}
             <div className="grid gap-3">
               <h2>{project.name}</h2> <p>{project.description}</p>
@@ -178,32 +241,25 @@ function Projects() {
                   <span key={language}> {language} </span>
                 ))}
               </div>
-              {/* Links */}
+              {/* Preview trigger */}
               <div className="flex gap-2">
-                {project.hasLive && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Live Code
-                  </a>
-                )}
-                <a
-                  href={project.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => setPreviewProject(project)}
                   className="hover:underline"
                 >
-                  Source Code
-                </a>
+                  Preview
+                </button>
               </div>
             </div>
           </div>
         ))}
         {filteredProjects.length === 0 && <p>No projects found.</p>}
       </div>
+
+      <ProjectPreview
+        project={previewProject}
+        onClose={() => setPreviewProject(null)}
+      />
     </div>
   );
 }
