@@ -1,4 +1,7 @@
 import IDE from "./IDE";
+import content from "../content.json";
+
+const home = content.home;
 
 const developerCode = (
   <>
@@ -6,7 +9,7 @@ const developerCode = (
     <span className="text-yellow-300">developer</span> = {"{"}
     {"\n  "}
     <span>name: </span>
-    <span className="text-green-400">"Daniel Manaloto"</span>
+    <span className="text-green-400">"{home.name}"</span>
     {","}
     {"\n  "}
     <span>writes: </span>
@@ -21,32 +24,28 @@ const developerCode = (
   </>
 );
 
-function Hero() {
+function Home() {
   return (
     <div className="min-h-screen w-full flex max-sm:flex-col gap-10 items-center justify-between pt-16">
       <div className="flex flex-col gap-3 w-full">
-        <h1>Daniel Manaloto</h1>
-        <h3>BSECE Graduate · Software Dev · Web Dev</h3>
+        <h1>{home.name}</h1>
+        <h3>{home.role}</h3>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam
-          asperiores, voluptatibus nisi provident soluta sit blanditiis,
-          accusantium quis ab explicabo dolore nobis, deleniti nam.
-        </p>
+        <p>{home.tagline}</p>
 
         <div className="flex gap-5">
           <a
-            href="#contact"
+            href={`${home.primaryCta.href}`}
             className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap"
           >
-            See Contacts
+            {home.primaryCta.label}
           </a>
 
           <a
-            href="#projects"
+            href={`${home.secondaryCta.href}`}
             className="border border-amber-700 rounded-4xl py-2 px-4 whitespace-nowrap"
           >
-            See my Projects
+            {home.secondaryCta.label}
           </a>
         </div>
       </div>
@@ -76,4 +75,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Home;

@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
 
       <main className="w-full">
-        <section id="hero" className="bg-background w-full min-h-screen">
-          <Hero />
+        <section id="home" className="bg-background w-full min-h-screen">
+          <Home />
         </section>
 
         <section id="about" className="bg-surface min-h-screen py-20">
