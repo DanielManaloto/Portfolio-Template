@@ -1,5 +1,8 @@
 import ContactForm from "./ContactForm";
 import { useState } from "react";
+import content from "../content.json";
+
+const contacts = content.contact;
 
 function Contact() {
   const [copied, setCopied] = useState(false);
@@ -38,7 +41,7 @@ function Contact() {
             <span className="shrink-0 font-medium sm:w-16">Email</span>
 
             <span className="min-w-0 break-all text-sm sm:text-base">
-              mrs11.djmanaloto@gmail.com
+              {contacts.email}
             </span>
 
             <button
@@ -53,8 +56,8 @@ function Contact() {
           <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">Github</span>
 
-            <a href="https://www.github.com/DanielManaloto" className="min-w-0 break-all text-sm sm:text-base">
-              github.com/DanielManaloto
+            <a href={`${contacts.github}`} className="min-w-0 break-all text-sm sm:text-base">
+              {contacts.github.slice(8,100)}
             </a>
           </div>
 
@@ -62,8 +65,8 @@ function Contact() {
           <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">LinkedIn</span>
 
-            <a href="https://www.linkedin.com/in/daniel-james-manaloto-71a353318/" className="min-w-0 break-all text-sm sm:text-base">
-              https://www.linkedin.com/in/daniel-james-manaloto-71a353318/
+            <a href={`${contacts.linkedin}`} className="min-w-0 break-all text-sm sm:text-base">
+              {contacts.linkedin}
             </a>
           </div>
         </div>

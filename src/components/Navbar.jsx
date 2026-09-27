@@ -1,6 +1,9 @@
 import { useState } from "react";
 import CircleBadge from './CircleBadge';
 
+import content from "../content.json"
+const navbar =  content.navbar;
+
 const navItems = [
   { name: "Hero", href: "#hero" },
   { name: "About", href: "#about" },
@@ -22,8 +25,8 @@ function Navbar() {
           className="flex items-center gap-2 text-xl font-bold text-gray-900"
           onClick={() => setIsOpen(false)}
         >
-          <CircleBadge size={40} fontSize="80"/>
-          Daniel Manaloto
+          <CircleBadge text={navbar.CircleBadge}size={40} fontSize="80"/>
+          {navbar.name}
         </a>
 
         {/* Desktop Navigation */}

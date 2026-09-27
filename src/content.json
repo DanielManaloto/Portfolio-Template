@@ -1,0 +1,534 @@
+{
+  "navbar": {
+    "name": "Daniel Manaloto",
+    "circleBadge": "DM"
+  },
+  "home": {
+    "name": "Daniel Manaloto",
+    "role": "BSECE Graduate · Software Dev · Web Dev",
+    "tagline": "I build fast, accessible websites and the software behind them, from the first line of HTML to the last bug fix.",
+    "langUsed": "",
+    "codeSnippet": {
+      "variableName": "developer",
+      "writes": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "C / C++"
+      ],
+      "status": "open to work"
+    },
+    "primaryCta": {
+      "label": "See my projects",
+      "href": "#projects"
+    },
+    "secondaryCta": {
+      "label": "Get in touch",
+      "href": "#contact"
+    }
+  },
+  "about": {
+    "sectionTitle": "I like the whole path from blank file to shipped",
+    "imagePath" : "portrait.jpg",
+    "paragraphs": [
+      "I started with HTML and CSS, moved into JavaScript and React, then picked up Python and C/C++ to understand what happens underneath the browser. That mix means I can build an interface and also reason about the code that feeds it.",
+      "I care about pages that load quickly, work with a keyboard, and read well on a small screen. Outside of client work I write small tools for myself and read other people's code to learn how they solve problems."
+    ],
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Front-end development and web apps"
+      },
+      {
+        "label": "Also comfortable with",
+        "value": "Automation scripts and low-level programming"
+      },
+      {
+        "label": "Currently learning",
+        "value": "TypeScript and WebAssembly"
+      },
+      {
+        "label": "How I work",
+        "value": "Small commits, clear names, tests where they matter"
+      },
+      {
+        "label": "Availability",
+        "value": "Open to full-time and freelance work"
+      }
+    ]
+  },
+  "skills": {
+    "sectionTitle": "Six languages, from the browser to the machine",
+    "sectionDescription": "Most of my day is spent in the browser stack. Python and C round out the automation work and the parts that need to run close to the hardware. Pick a language to see how I use it.",
+    "endLabels": {
+      "start": "Runs in the browser",
+      "end": "Runs close to the hardware"
+    },
+    "skillCardContent": [
+      {
+        "id": "html",
+        "language": "HTML",
+        "fileExtension": ".html",
+        "color": "#E4572E",
+        "confidence": 5,
+        "lineCount": 4,
+        "code": [
+          {
+            "text": "<header>\n  <h1>",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "Alex Santos",
+            "className": ""
+          },
+          {
+            "text": "</h1>\n  <p>",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "Web developer",
+            "className": ""
+          },
+          {
+            "text": "</p>\n</header>",
+            "className": "text-sky-400"
+          }
+        ],
+        "useWith": "Semantic page structure, accessible forms, and the landmarks that search engines and screen readers rely on.",
+        "builtWith": "Marketing sites, responsive email templates, and multi-step forms.",
+        "workWith": [
+          ".css",
+          ".js"
+        ]
+      },
+      {
+        "id": "css",
+        "language": "CSS",
+        "fileExtension": ".css",
+        "color": "#2F6FED",
+        "confidence": 4,
+        "lineCount": 4,
+        "code": [
+          {
+            "text": ".card {\n  display: grid;\n  gap: ",
+            "className": ""
+          },
+          {
+            "text": "var(--gap)",
+            "className": "text-sky-400"
+          },
+          {
+            "text": ";\n  padding: 1rem;\n}",
+            "className": ""
+          }
+        ],
+        "useWith": "Grid and flexbox layouts, custom properties for theming, and container queries.",
+        "builtWith": "Design systems, dark-mode themes, and layouts that hold up from phone to widescreen.",
+        "workWith": [
+          ".html",
+          ".jsx"
+        ]
+      },
+      {
+        "id": "js",
+        "language": "JavaScript",
+        "fileExtension": ".js",
+        "color": "#E0A800",
+        "confidence": 5,
+        "lineCount": 4,
+        "code": [
+          {
+            "text": "async function ",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "getData",
+            "className": "text-amber-300"
+          },
+          {
+            "text": "() {\n  const res = await fetch(url);\n  return res.json();\n}",
+            "className": ""
+          }
+        ],
+        "useWith": "DOM scripting, async data fetching, form validation, and small Node.js services.",
+        "builtWith": "Interactive dashboards, a REST API client, and a lightweight build script.",
+        "workWith": [
+          ".jsx",
+          ".py"
+        ]
+      },
+      {
+        "id": "jsx",
+        "language": "JSX",
+        "fileExtension": ".jsx",
+        "color": "#16A5C6",
+        "confidence": 4,
+        "lineCount": 3,
+        "code": [
+          {
+            "text": "function ",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "Skill",
+            "className": "text-amber-300"
+          },
+          {
+            "text": "({ name }) {\n  return ",
+            "className": ""
+          },
+          {
+            "text": "<li>",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "{name}",
+            "className": ""
+          },
+          {
+            "text": "</li>",
+            "className": "text-sky-400"
+          },
+          {
+            "text": ";\n}",
+            "className": ""
+          }
+        ],
+        "useWith": "React components with hooks and props, state management, and reusable UI libraries.",
+        "builtWith": "A component library, a task tracker, and this portfolio site.",
+        "workWith": [
+          ".js",
+          ".css"
+        ]
+      },
+      {
+        "id": "python",
+        "language": "Python",
+        "fileExtension": ".py",
+        "color": "#2E9E5B",
+        "confidence": 4,
+        "lineCount": 2,
+        "code": [
+          {
+            "text": "def ",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "average",
+            "className": "text-amber-300"
+          },
+          {
+            "text": "(nums):\n    return sum(nums) / len(nums)",
+            "className": ""
+          }
+        ],
+        "useWith": "Automation scripts, data cleanup, small web APIs, and quick prototypes.",
+        "builtWith": "A CSV report generator, a Flask API, and a scraper that runs on a schedule.",
+        "workWith": [
+          ".js",
+          ".c"
+        ]
+      },
+      {
+        "id": "cpp",
+        "language": "C++",
+        "fileExtension": ".cpp",
+        "color": "#DC2626",
+        "confidence": 4,
+        "lineCount": 4,
+        "code": [
+          {
+            "text": "template <class T>\n",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "T ",
+            "className": ""
+          },
+          {
+            "text": "max",
+            "className": "text-amber-300"
+          },
+          {
+            "text": "(T a, T b) {\n  return a > b ? a : b;\n}",
+            "className": ""
+          }
+        ],
+        "useWith": "Object-oriented and generic programming, templates, and the STL for larger C-family projects.",
+        "builtWith": "A TLS handshake inspector and other low-level networking and systems tools.",
+        "workWith": [
+          ".c"
+        ]
+      },
+      {
+        "id": "c",
+        "language": "C",
+        "fileExtension": ".c",
+        "color": "#6A5ACD",
+        "confidence": 3,
+        "lineCount": 4,
+        "code": [
+          {
+            "text": "int *",
+            "className": "text-sky-400"
+          },
+          {
+            "text": "make",
+            "className": "text-amber-300"
+          },
+          {
+            "text": "(int n) {\n  int *p = malloc(n);\n  return p;\n}",
+            "className": ""
+          }
+        ],
+        "useWith": "Data structures, manual memory management, and performance-critical code.",
+        "builtWith": "A linked-list library, a text parser, and coursework in embedded programming.",
+        "workWith": [
+          ".py"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Projects I've built",
+    "sectionDescription": "A mix of client work, side projects, and coursework.",
+    "filters": [
+      {
+        "label": "All"
+      },
+      {
+        "label": "HTML / CSS / JS",
+        "languages": [
+          "HTML",
+          "CSS",
+          "JS"
+        ]
+      },
+      {
+        "label": "JSX",
+        "languages": [
+          "JSX"
+        ]
+      },
+      {
+        "label": "Python",
+        "languages": [
+          "Python"
+        ]
+      },
+      {
+        "label": "C / C++",
+        "languages": [
+          "C",
+          "C++"
+        ]
+      }
+    ],
+    "projectList": [
+      {
+        "name": "Portfolio Website",
+        "description": "My personal portfolio website.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS",
+          "JSX"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://example.com",
+        "sourceUrl": "https://github.com/example/portfolio",
+        "images": []
+      },
+      {
+        "name": "Bitmap Image Viewer",
+        "description": "A simple BMP image viewer written in C using SDL2. This project focuses on parsing and rendering BMP files with support for multiple formats and compression types.",
+        "language": [
+          "C"
+        ],
+        "hasLive": true,
+        "liveUrl": "",
+        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/bmp_viewer",
+        "images": [
+          "/BMP-Viewer/Capture3.PNG",
+          "/BMP-Viewer/Capture4.PNG"
+        ]
+      },
+      {
+        "name": "LC-3 Virtual Machine (Python)",
+        "description": "A simple LC-3 (Little Computer 3) virtual machine implemented in Python. This project emulates the LC-3 architecture, including registers, memory, instruction set, and trap routines.",
+        "language": [
+          "Python"
+        ],
+        "hasLive": false,
+        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/python_lc3",
+        "images": [
+          "/Python-LC3/Capture.PNG",
+          "/Python-LC3/Capture2.PNG"
+        ]
+      },
+      {
+        "name": "PH Acquired Properties Scraper",
+        "description": "Scrapes publicly listed acquired/foreclosed real estate from four Philippine government and bank sources, combines them into one normalized dataset, and optionally loads everything into MySQL.",
+        "language": [
+          "Python"
+        ],
+        "hasLive": false,
+        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/ph-acquired-properties-scraper",
+        "images": []
+      },
+      {
+        "name": "TLS Analyzer",
+        "description": "A from-scratch, live TLS handshake inspector — built to learn packet capture, protocol parsing, and systems programming from the wire up.",
+        "language": [
+          "C",
+          "C++"
+        ],
+        "hasLive": false,
+        "sourceUrl": "https://github.com/DanielManaloto/TLS-Analyzer",
+        "images": [
+          "/TLS-Analyzer/TLS_ANALYZER_LOGO.png",
+          "/TLS-Analyzer/Capture1.PNG",
+          "/TLS-Analyzer/Capture2.PNG",
+          "/TLS-Analyzer/Capture3.PNG",
+          "/TLS-Analyzer/Capture4.PNG",
+          "/TLS-Analyzer/Capture5.PNG",
+          "/TLS-Analyzer/Capture6.PNG",
+          "/TLS-Analyzer/architecture-diagram.svg"
+        ]
+      },
+      {
+        "name": "WinEventHook",
+        "description": "A lightweight Windows console application written in C using the Win32 API. WinEventHook records and replays keyboard and mouse input using low-level Windows hooks and SendInput().",
+        "language": [
+          "C"
+        ],
+        "hasLive": false,
+        "sourceUrl": "https://github.com/DanielManaloto/WinEventHook",
+        "images": [
+          "/WinEventHook/WInEventHook.PNG",
+          "/WinEventHook/Recording.PNG",
+          "/WinEventHook/Select-Recording.PNG",
+          "/WinEventHook/Save-Recording.PNG",
+          "/WinEventHook/Save-Recording.PNG"
+        ]
+      },
+      {
+        "name": "Todo App",
+        "description": "A responsive todo app built with React and Tailwind CSS. Supports adding, completing, deleting, and filtering todos, a persistent light/dark theme, and drag-and-drop reordering using the native HTML5 Drag and Drop API.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS",
+          "JSX"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-todo-app-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
+        "images": [
+          "/Todo-App/desktop-design-light.png",
+          "/Todo-App/desktop-design-dark.png",
+          "/Todo-App/mobile-design-light.png",
+          "/Todo-App/mobile-design-dark.png"
+        ]
+      },
+      {
+        "name": "Weather App",
+        "description": "A weather app built with vanilla JavaScript and the Open-Meteo API. Features city search with debounced autocomplete, current conditions, hourly and 7-day forecasts, and switchable metric/imperial units, all in a responsive layout.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-weather-app-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
+        "images": [
+          "/Weather-App/desktop-design-metric.png",
+          "/Weather-App/desktop-design-imperial.png",
+          "/Weather-App/mobile-design.png",
+          "/Weather-App/no-result-state.png",
+          "/Weather-App/loading-state.png",
+          "/Weather-App/dropdown-state.png"
+        ]
+      },
+      {
+        "name": "Order Summary Card",
+        "description": "A small order summary card built as a Flexbox layout exercise. Uses Flexbox for centering and stacking the card contents, with hover states on the interactive elements.",
+        "language": [
+          "HTML",
+          "CSS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-order-summary-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
+        "images": [
+          "/Order-Summary/desktop-design.png",
+          "/Order-Summary/mobile-design.png"
+        ]
+      },
+      {
+        "name": "Interactive Rating Component",
+        "description": "An interactive rating card with a \"Thank you\" state after submitting. Uses visually restyled radio buttons for single-select ratings and JavaScript to switch between states.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-rating-component-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
+        "images": [
+          "/Interactive-Rating/desktop-design.png",
+          "/Interactive-Rating/desktop-thankyou-state.png",
+          "/Interactive-Rating/active-state.png",
+          "/Interactive-Rating/mobile-design.png",
+          "/Interactive-Rating/mobile-thankyou-state.png"
+        ]
+      },
+      {
+        "name": "Bento Grid",
+        "description": "A responsive bento grid layout built with CSS Grid. Uses named grid areas and media queries to rearrange the boxes across mobile, tablet, and desktop screens.",
+        "language": [
+          "HTML",
+          "CSS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-bento-grid-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
+        "images": [
+          "/Bento-Grid/desktop-design.png",
+          "/Bento-Grid/mobile-design.png"
+        ]
+      },
+      {
+        "name": "Age Calculator App",
+        "description": "An age calculator that takes a birth date and shows the age in years, months, and days. Includes form validation for empty, out-of-range, invalid, and future dates, with a responsive layout.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://your-age-calculator-url.com",
+        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
+        "images": [
+          "/Age-Calculator/complete-desktop-design.png",
+          "/Age-Calculator/complete-state.png",
+          "/Age-Calculator/desktop-design.png",
+          "/Age-Calculator/desktop-error-empty.png",
+          "/Age-Calculator/desktop-error-invalid.png",
+          "/Age-Calculator/mobile-design.png"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Have a project in mind?",
+    "sectionDescription": "Tell me what you're building and when you need it. I reply to every message within two working days.",
+    "email": "mrs11.djmanaloto@gmail.com",
+    "github": "https://www.github.com/DanielManaloto",
+    "linkedin": "https://linkedin.com/in/alexsantos",
+    "formNote": "This opens a draft in your email app. Nothing is sent until you press send there."
+  }
+}

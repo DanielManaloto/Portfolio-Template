@@ -2,11 +2,20 @@ import IDE from "./IDE";
 import content from "../content.json";
 
 const home = content.home;
+const { variableName, writes, status } = home.codeSnippet;
+
+// Group the "writes" list a few items per line so the snippet wraps the
+// same way regardless of how many languages content.json lists.
+const WRITES_PER_LINE = 3;
+const writeLines = [];
+for (let i = 0; i < writes.length; i += WRITES_PER_LINE) {
+  writeLines.push(writes.slice(i, i + WRITES_PER_LINE));
+}
 
 const developerCode = (
   <>
     <span className="text-blue-400">const</span>{" "}
-    <span className="text-yellow-300">developer</span> = {"{"}
+    <span className="text-yellow-300">{variableName}</span> = {"{"}
     {"\n  "}
     <span>name: </span>
     <span className="text-green-400">"{home.name}"</span>
@@ -14,12 +23,18 @@ const developerCode = (
     {"\n  "}
     <span>writes: </span>
     {"["}
-    <span className="text-green-400">"HTML", "CSS", "JavaScript",</span>
-    {"\n           "}
-    <span className="text-green-400">"Python", "C / C++"</span> {"],"}
+    {writeLines.map((line, i) => (
+      <span key={i}>
+        {i > 0 && "\n           "}
+        <span className="text-green-400">
+          {line.map((item) => `"${item}"`).join(", ")}
+        </span>
+        {i === writeLines.length - 1 ? " ]," : ","}
+      </span>
+    ))}
     {"\n  "}
     <span>status: </span>
-    <span className="text-green-400">"open to work"</span>
+    <span className="text-green-400">"{status}"</span>
     {"\n};"}
   </>
 );
