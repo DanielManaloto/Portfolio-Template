@@ -1,22 +1,19 @@
 {
+  "_readme": "This file holds all the editable text, links, and content for the site. To change something, edit the value after the colon (the part in quotes, or the number/true/false). Do not rename anything before a colon — the code looks for those exact names — and don't remove any commas, quotes, curly braces {} or square brackets [], or the file will stop working. Any key starting with an underscore, like this one, is just a note for humans and isn't read by the site; feel free to delete them, but leaving them in place won't cause any problems.",
   "navbar": {
+    "_comment": "The name and two-letter badge shown in the top navigation bar.",
     "name": "Daniel Manaloto",
     "circleBadge": "DM"
   },
   "home": {
+    "_comment": "The introduction at the top of the page. 'primaryCta' and 'secondaryCta' are the two buttons; 'href' should point to a section id on the page, written as '#' plus that section's id (e.g. '#projects').",
     "name": "Daniel Manaloto",
     "role": "BSECE Graduate · Software Dev · Web Dev",
     "tagline": "I build fast, accessible websites and the software behind them, from the first line of HTML to the last bug fix.",
-    "langUsed": "",
     "codeSnippet": {
+      "_comment": "Powers the small 'typed code' animation. 'writes' is the list of languages it types out, one per line — add, remove, or reorder them freely. 'status' is the last line it types.",
       "variableName": "developer",
-      "writes": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Python",
-        "C / C++"
-      ],
+      "writes": ["HTML", "CSS", "JavaScript", "Python", "C / C++"],
       "status": "open to work"
     },
     "primaryCta": {
@@ -29,8 +26,9 @@
     }
   },
   "about": {
+    "_comment": "The 'About' section. 'imagePath' is the photo shown next to the text — add the image to the project's images and put its path here. 'paragraphs' is the body text: one string per paragraph, add or remove as needed. 'facts' are the label/value rows below the paragraphs; each item needs a short 'label' and its 'value' — add or remove items freely.",
     "sectionTitle": "I like the whole path from blank file to shipped",
-    "imagePath" : "portrait.jpg",
+    "imagePath": "portrait.jpg",
     "paragraphs": [
       "I started with HTML and CSS, moved into JavaScript and React, then picked up Python and C/C++ to understand what happens underneath the browser. That mix means I can build an interface and also reason about the code that feeds it.",
       "I care about pages that load quickly, work with a keyboard, and read well on a small screen. Outside of client work I write small tools for myself and read other people's code to learn how they solve problems."
@@ -59,12 +57,14 @@
     ]
   },
   "skills": {
+    "_comment": "The interactive language picker. 'endLabels' are the two captions shown at either end of the slider.",
     "sectionTitle": "Six languages, from the browser to the machine",
     "sectionDescription": "Most of my day is spent in the browser stack. Python and C round out the automation work and the parts that need to run close to the hardware. Pick a language to see how I use it.",
     "endLabels": {
       "start": "Runs in the browser",
       "end": "Runs close to the hardware"
     },
+    "_skillCardContentGuide": "Each object in the list below is one language card. Fields: id (short, unique, lowercase — not shown on screen, just used internally); language (the big heading, e.g. 'JavaScript'); fileExtension (the small pill next to it, e.g. '.js'); color (a hex code like '#E0A800' used for that card's accent color); confidence (a number from 1 to 5 — how many bars are filled in); lineCount (how many lines the 'code' sample below produces — this must match or the line numbers won't line up); code (the snippet in the little code window, split into pieces — each piece has 'text', with \\n marking where a new line starts, and 'className', which should be '' for plain text, 'text-sky-400' for keywords, 'text-amber-300' for function or class names, or 'text-emerald-400' for strings); useWith and builtWith (one sentence each, shown on the right of the card); workWith (the fileExtensions, like '.css', of related languages — these become the clickable pills that jump to that card). To add a language, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "skillCardContent": [
       {
         "id": "html",
@@ -97,10 +97,7 @@
         ],
         "useWith": "Semantic page structure, accessible forms, and the landmarks that search engines and screen readers rely on.",
         "builtWith": "Marketing sites, responsive email templates, and multi-step forms.",
-        "workWith": [
-          ".css",
-          ".js"
-        ]
+        "workWith": [".css", ".js"]
       },
       {
         "id": "css",
@@ -125,10 +122,7 @@
         ],
         "useWith": "Grid and flexbox layouts, custom properties for theming, and container queries.",
         "builtWith": "Design systems, dark-mode themes, and layouts that hold up from phone to widescreen.",
-        "workWith": [
-          ".html",
-          ".jsx"
-        ]
+        "workWith": [".html", ".jsx"]
       },
       {
         "id": "js",
@@ -153,10 +147,7 @@
         ],
         "useWith": "DOM scripting, async data fetching, form validation, and small Node.js services.",
         "builtWith": "Interactive dashboards, a REST API client, and a lightweight build script.",
-        "workWith": [
-          ".jsx",
-          ".py"
-        ]
+        "workWith": [".jsx", ".py"]
       },
       {
         "id": "jsx",
@@ -197,10 +188,7 @@
         ],
         "useWith": "React components with hooks and props, state management, and reusable UI libraries.",
         "builtWith": "A component library, a task tracker, and this portfolio site.",
-        "workWith": [
-          ".js",
-          ".css"
-        ]
+        "workWith": [".js", ".css"]
       },
       {
         "id": "python",
@@ -225,10 +213,7 @@
         ],
         "useWith": "Automation scripts, data cleanup, small web APIs, and quick prototypes.",
         "builtWith": "A CSV report generator, a Flask API, and a scraper that runs on a schedule.",
-        "workWith": [
-          ".js",
-          ".c"
-        ]
+        "workWith": [".js", ".c"]
       },
       {
         "id": "cpp",
@@ -257,9 +242,7 @@
         ],
         "useWith": "Object-oriented and generic programming, templates, and the STL for larger C-family projects.",
         "builtWith": "A TLS handshake inspector and other low-level networking and systems tools.",
-        "workWith": [
-          ".c"
-        ]
+        "workWith": [".c"]
       },
       {
         "id": "c",
@@ -284,57 +267,42 @@
         ],
         "useWith": "Data structures, manual memory management, and performance-critical code.",
         "builtWith": "A linked-list library, a text parser, and coursework in embedded programming.",
-        "workWith": [
-          ".py"
-        ]
+        "workWith": [".py"]
       }
     ]
   },
   "projects": {
+    "_comment": "The projects grid and its filter buttons.",
     "sectionTitle": "Projects I've built",
     "sectionDescription": "A mix of client work, side projects, and coursework.",
+    "_filtersGuide": "Each filter button needs a 'label' (the text on the button). The 'All' button has no 'languages' field and always shows every project. Every other button needs a 'languages' array — a project shows under that filter if any of its own 'language' values are in this list. Group languages together the way 'C / C++' does below if you want one button to match more than one language.",
     "filters": [
       {
         "label": "All"
       },
       {
         "label": "HTML / CSS / JS",
-        "languages": [
-          "HTML",
-          "CSS",
-          "JS"
-        ]
+        "languages": ["HTML", "CSS", "JS"]
       },
       {
         "label": "JSX",
-        "languages": [
-          "JSX"
-        ]
+        "languages": ["JSX"]
       },
       {
         "label": "Python",
-        "languages": [
-          "Python"
-        ]
+        "languages": ["Python"]
       },
       {
         "label": "C / C++",
-        "languages": [
-          "C",
-          "C++"
-        ]
+        "languages": ["C", "C++"]
       }
     ],
+    "_projectListGuide": "Each object below is one project card. Fields: name; description; language (an array of strings — use the exact spelling 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C', or 'C++' so the filters above match correctly); hasLive (true or false — whether to show a live-site link); liveUrl (only needed when hasLive is true); sourceUrl (link to the code); images (an array of image paths — leave it as [] to show a placeholder box instead of a photo). To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "projectList": [
       {
         "name": "Portfolio Website",
         "description": "My personal portfolio website.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS",
-          "JSX"
-        ],
+        "language": ["HTML", "CSS", "JS", "JSX"],
         "hasLive": true,
         "liveUrl": "https://example.com",
         "sourceUrl": "https://github.com/example/portfolio",
@@ -343,36 +311,24 @@
       {
         "name": "Bitmap Image Viewer",
         "description": "A simple BMP image viewer written in C using SDL2. This project focuses on parsing and rendering BMP files with support for multiple formats and compression types.",
-        "language": [
-          "C"
-        ],
+        "language": ["C"],
         "hasLive": true,
         "liveUrl": "",
         "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/bmp_viewer",
-        "images": [
-          "/BMP-Viewer/Capture3.PNG",
-          "/BMP-Viewer/Capture4.PNG"
-        ]
+        "images": ["/BMP-Viewer/Capture3.PNG", "/BMP-Viewer/Capture4.PNG"]
       },
       {
         "name": "LC-3 Virtual Machine (Python)",
         "description": "A simple LC-3 (Little Computer 3) virtual machine implemented in Python. This project emulates the LC-3 architecture, including registers, memory, instruction set, and trap routines.",
-        "language": [
-          "Python"
-        ],
+        "language": ["Python"],
         "hasLive": false,
         "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/python_lc3",
-        "images": [
-          "/Python-LC3/Capture.PNG",
-          "/Python-LC3/Capture2.PNG"
-        ]
+        "images": ["/Python-LC3/Capture.PNG", "/Python-LC3/Capture2.PNG"]
       },
       {
         "name": "PH Acquired Properties Scraper",
         "description": "Scrapes publicly listed acquired/foreclosed real estate from four Philippine government and bank sources, combines them into one normalized dataset, and optionally loads everything into MySQL.",
-        "language": [
-          "Python"
-        ],
+        "language": ["Python"],
         "hasLive": false,
         "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/ph-acquired-properties-scraper",
         "images": []
@@ -380,10 +336,7 @@
       {
         "name": "TLS Analyzer",
         "description": "A from-scratch, live TLS handshake inspector — built to learn packet capture, protocol parsing, and systems programming from the wire up.",
-        "language": [
-          "C",
-          "C++"
-        ],
+        "language": ["C", "C++"],
         "hasLive": false,
         "sourceUrl": "https://github.com/DanielManaloto/TLS-Analyzer",
         "images": [
@@ -400,9 +353,7 @@
       {
         "name": "WinEventHook",
         "description": "A lightweight Windows console application written in C using the Win32 API. WinEventHook records and replays keyboard and mouse input using low-level Windows hooks and SendInput().",
-        "language": [
-          "C"
-        ],
+        "language": ["C"],
         "hasLive": false,
         "sourceUrl": "https://github.com/DanielManaloto/WinEventHook",
         "images": [
@@ -416,12 +367,7 @@
       {
         "name": "Todo App",
         "description": "A responsive todo app built with React and Tailwind CSS. Supports adding, completing, deleting, and filtering todos, a persistent light/dark theme, and drag-and-drop reordering using the native HTML5 Drag and Drop API.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS",
-          "JSX"
-        ],
+        "language": ["HTML", "CSS", "JS", "JSX"],
         "hasLive": true,
         "liveUrl": "https://your-todo-app-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
@@ -435,11 +381,7 @@
       {
         "name": "Weather App",
         "description": "A weather app built with vanilla JavaScript and the Open-Meteo API. Features city search with debounced autocomplete, current conditions, hourly and 7-day forecasts, and switchable metric/imperial units, all in a responsive layout.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "language": ["HTML", "CSS", "JS"],
         "hasLive": true,
         "liveUrl": "https://your-weather-app-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
@@ -455,10 +397,7 @@
       {
         "name": "Order Summary Card",
         "description": "A small order summary card built as a Flexbox layout exercise. Uses Flexbox for centering and stacking the card contents, with hover states on the interactive elements.",
-        "language": [
-          "HTML",
-          "CSS"
-        ],
+        "language": ["HTML", "CSS"],
         "hasLive": true,
         "liveUrl": "https://your-order-summary-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
@@ -470,11 +409,7 @@
       {
         "name": "Interactive Rating Component",
         "description": "An interactive rating card with a \"Thank you\" state after submitting. Uses visually restyled radio buttons for single-select ratings and JavaScript to switch between states.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "language": ["HTML", "CSS", "JS"],
         "hasLive": true,
         "liveUrl": "https://your-rating-component-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
@@ -489,10 +424,7 @@
       {
         "name": "Bento Grid",
         "description": "A responsive bento grid layout built with CSS Grid. Uses named grid areas and media queries to rearrange the boxes across mobile, tablet, and desktop screens.",
-        "language": [
-          "HTML",
-          "CSS"
-        ],
+        "language": ["HTML", "CSS"],
         "hasLive": true,
         "liveUrl": "https://your-bento-grid-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
@@ -504,11 +436,7 @@
       {
         "name": "Age Calculator App",
         "description": "An age calculator that takes a birth date and shows the age in years, months, and days. Includes form validation for empty, out-of-range, invalid, and future dates, with a responsive layout.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "language": ["HTML", "CSS", "JS"],
         "hasLive": true,
         "liveUrl": "https://your-age-calculator-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
@@ -524,6 +452,7 @@
     ]
   },
   "contact": {
+    "_comment": "The closing section. 'email', 'github', and 'linkedin' show as contact links — 'github' and 'linkedin' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
     "sectionTitle": "Have a project in mind?",
     "sectionDescription": "Tell me what you're building and when you need it. I reply to every message within two working days.",
     "email": "mrs11.djmanaloto@gmail.com",
