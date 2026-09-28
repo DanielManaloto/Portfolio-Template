@@ -4,6 +4,7 @@ import IDE from "./IDE";
 import content from "../content.json";
 
 const skillCardContent = content.skills.skillCardContent;
+const confidenceLabels = content.skills.confidenceLabels;
 
 const findSkill = (ext) =>
   skillCardContent.find((skill) => skill.fileExtension === ext);
@@ -28,7 +29,7 @@ const SkillCard = ({ skill, onSelect }) => {
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="flex gap-1.5">
+          <div className="flex gap-1.5" aria-hidden="true">
             {[1, 2, 3, 4, 5].map((level) => (
               <div
                 key={level}
@@ -41,18 +42,19 @@ const SkillCard = ({ skill, onSelect }) => {
               />
             ))}
           </div>
+          <span className="text-sm text-slate-600">
+            {confidenceLabels[skill.confidence]}
+          </span>
         </div>
 
         <IDE
+          key={skill.id}
           width="100%"
           height="8rem"
           tabs={[]}
-          lineCount={skill.lineCount}
-          code={skill.code.map((token, index) => (
-            <span key={index} className={token.className || undefined}>
-              {token.text}
-            </span>
-          ))}
+          tokens={skill.code}
+          typing
+          startOnVisible
         />
       </div>
 
@@ -101,7 +103,7 @@ function Skills() {
   const [selectedId, setSelectedId] = useState(skillCardContent[0].id);
 
   const selectedIndex = skillCardContent.findIndex(
-    (skill) => skill.id === selectedId
+    (skill) => skill.id === selectedId,
   );
   const selectedSkill = skillCardContent[selectedIndex];
 
@@ -119,9 +121,9 @@ function Skills() {
           Six languages, from the browser to the machine
         </h2>
         <p className="mt-3 text-slate-600">
-          Most of my day is spent in the browser stack. Python and C round
-          out the automation work and the parts that need to run close to
-          the hardware. Pick a language to see how I use it.
+          Most of my day is spent in the browser stack. Python and C round out
+          the automation work and the parts that need to run close to the
+          hardware. Pick a language to see how I use it.
         </p>
       </div>
 
