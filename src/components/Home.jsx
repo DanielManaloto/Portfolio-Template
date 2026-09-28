@@ -4,6 +4,10 @@ import content from "../content.json";
 const home = content.home;
 const { variableName, writes, status } = home.codeSnippet;
 
+const KEYWORD = "text-blue-400";
+const IDENT = "text-yellow-300";
+const STRING = "text-green-400";
+
 // Group the "writes" list a few items per line so the snippet wraps the
 // same way regardless of how many languages content.json lists.
 const WRITES_PER_LINE = 3;
@@ -12,32 +16,32 @@ for (let i = 0; i < writes.length; i += WRITES_PER_LINE) {
   writeLines.push(writes.slice(i, i + WRITES_PER_LINE));
 }
 
-const developerCode = (
-  <>
-    <span className="text-blue-400">const</span>{" "}
-    <span className="text-yellow-300">{variableName}</span> = {"{"}
-    {"\n  "}
-    <span>name: </span>
-    <span className="text-green-400">"{home.name}"</span>
-    {","}
-    {"\n  "}
-    <span>writes: </span>
-    {"["}
-    {writeLines.map((line, i) => (
-      <span key={i}>
-        {i > 0 && "\n           "}
-        <span className="text-green-400">
-          {line.map((item) => `"${item}"`).join(", ")}
-        </span>
-        {i === writeLines.length - 1 ? " ]," : ","}
-      </span>
-    ))}
-    {"\n  "}
-    <span>status: </span>
-    <span className="text-green-400">"{status}"</span>
-    {"\n};"}
-  </>
-);
+// The snippet as a flat list of coloured tokens, so the IDE can type it out.
+const developerTokens = [
+  { text: "const", className: KEYWORD },
+  { text: " " },
+  { text: variableName, className: IDENT },
+  { text: " = {\n  name: " },
+  { text: `"${home.name}"`, className: STRING },
+  { text: ",\n  writes: [" },
+  ...writeLines.flatMap((line, i) => [
+    ...(i > 0 ? [{ text: "\n           " }] : []),
+    { text: line.map((item) => `"${item}"`).join(", "), className: STRING },
+    { text: i === writeLines.length - 1 ? " ]," : "," },
+  ]),
+  { text: "\n  status: " },
+  { text: `"${status}"`, className: STRING },
+  { text: "\n};" },
+];
+
+// Derive the line count from the text so it can never drift out of sync.
+const developerLineCount =
+  developerTokens.reduce((n, t) => n + t.text.split("\n").length - 1, 0) + 1;
+
+const statusLabels = {
+  running: "Running developer.js",
+  done: status.charAt(0).toUpperCase() + status.slice(1),
+};
 
 function Home() {
   return (
@@ -67,7 +71,7 @@ function Home() {
       <div className="w-full max-w-[30rem]">
         <IDE
           width="100%"
-          height="15rem"
+          height="16rem"
           tabs={[
             {
               name: "developer.js",
@@ -82,8 +86,10 @@ function Home() {
               closable: true,
             },
           ]}
-          lineCount={7}
-          code={developerCode}
+          lineCount={developerLineCount}
+          tokens={developerTokens}
+          typing
+          status={statusLabels}
         />
       </div>
     </div>
