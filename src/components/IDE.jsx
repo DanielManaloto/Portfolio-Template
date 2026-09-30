@@ -4,7 +4,7 @@ const prefersReducedMotion = () =>
   typeof window !== "undefined" &&
   !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
-/**
+/*
  * Types out an array of { text, className } tokens.
  * Returns how many characters should currently be visible.
  *
@@ -73,7 +73,7 @@ function renderTokens(tokens, count) {
 const countLines = (tokens) =>
   tokens.reduce((n, t) => n + t.text.split("\n").length - 1, 0) + 1;
 
-/**
+/*
  * IDE
  *
  * Props:

@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-gray-100 text-foreground sm:px-55 px-5">
+    <div className="w-full min-h-screen bg-background text-foreground sm:px-55 px-5">
       <Navbar />
 
       <main className="w-full">
@@ -15,7 +15,7 @@ function App() {
           <Home />
         </section>
 
-        <section id="about" className="bg-surface min-h-screen py-20">
+        <section id="about" className="min-h-screen py-20">
           <About />
         </section>
 
@@ -23,7 +23,7 @@ function App() {
           <Projects />
         </section>
 
-        <section id="skills" className="w-full bg-surface py-24">
+        <section id="skills" className="w-full py-24">
           <Skills />
         </section>
 

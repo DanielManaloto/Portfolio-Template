@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 function ProjectPreview({ project, onClose }) {
   const [lightboxImage, setLightboxImage] = useState(null);
  
-  // Close on Escape — dismiss the enlarged image first if one is open,
-  // otherwise close the whole preview.
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.key !== "Escape") return;
@@ -31,27 +29,27 @@ function ProjectPreview({ project, onClose }) {
       onClick={onClose}
     >
       <div
-        className="grid w-full max-w-2xl gap-4 max-h-[85vh] overflow-y-auto rounded border border-gray-300 bg-white p-6"
+        className="grid w-full max-w-2xl gap-4 max-h-[85vh] overflow-y-auto rounded border border-border bg-card p-6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-4">
-          <h2 className="text-lg font-semibold">{project.name}</h2>
+          <h2 className="text-lg font-semibold text-card-foreground">{project.name}</h2>
           <button
             onClick={onClose}
             aria-label="Close preview"
-            className="text-xl leading-none text-gray-500 hover:text-black"
+            className="text-xl leading-none border-2 border-text-muted hover:text-foreground"
           >
             &times;
           </button>
         </div>
  
-        <p className="whitespace-pre-line text-gray-700">
+        <p className="whitespace-pre-line text-muted-foreground">
           {project.description}
         </p>
  
         <div className="flex flex-wrap gap-2 text-sm">
           {project.language.map((language) => (
-            <span key={language} className="rounded bg-gray-100 px-2 py-1">
+            <span key={language} className="rounded bg-muted px-2 py-1">
               {language}
             </span>
           ))}
@@ -64,7 +62,7 @@ function ProjectPreview({ project, onClose }) {
                 key={src}
                 src={src}
                 alt={`${project.name} screenshot`}
-                className="w-full cursor-zoom-in rounded border border-gray-300 object-cover transition hover:opacity-90"
+                className="w-full cursor-zoom-in rounded border border-border object-cover transition hover:opacity-90"
                 onClick={() => setLightboxImage(src)}
                 onError={(e) => {
                   e.currentTarget.remove();
@@ -73,16 +71,16 @@ function ProjectPreview({ project, onClose }) {
             ))}
           </div>
         ) : (
-          <p className="text-sm text-gray-500">No screenshots added yet.</p>
+          <p className="text-sm border-text-MUTED">No screenshots added yet.</p>
         )}
  
-        <div className="flex gap-2 border-t border-gray-200 pt-4">
+        <div className="flex gap-2 border-t border-muted pt-4">
           {project.hasLive && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded bg-black px-3 py-1 text-sm text-white hover:opacity-90"
+              className="rounded bg-primary text-primary-foreground border border-border px-3 py-1 text-sm hover:opacity-90"
             >
               Live Site
             </a>
@@ -91,7 +89,7 @@ function ProjectPreview({ project, onClose }) {
             href={project.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded border border-gray-400 px-3 py-1 text-sm hover:bg-gray-100"
+            className="rounded bg-secondary text-secondary-foreground border border-border px-3 py-1 text-sm hover:bg-muted"
           >
             Source Code
           </a>
@@ -112,7 +110,7 @@ function ProjectPreview({ project, onClose }) {
               setLightboxImage(null);
             }}
             aria-label="Close enlarged image"
-            className="absolute top-4 right-4 text-3xl leading-none text-white hover:opacity-75"
+            className="absolute top-4 right-4 text-3xl border-2 leading-none text-card-foreground hover:opacity-75"
           >
             &times;
           </button>

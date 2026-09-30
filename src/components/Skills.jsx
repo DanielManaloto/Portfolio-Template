@@ -117,10 +117,10 @@ function Skills() {
   return (
     <section className="mx-auto flex w-full max-w-4xl flex-col gap-10 py-12">
       <div className="max-w-2xl">
-        <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
           Six languages, from the browser to the machine
         </h2>
-        <p className="mt-3 text-slate-600">
+        <p className="mt-3 text-surface-foreground">
           Most of my day is spent in the browser stack. Python and C round out
           the automation work and the parts that need to run close to the
           hardware. Pick a language to see how I use it.
@@ -145,7 +145,7 @@ function Skills() {
             return (
               <label
                 key={skill.id}
-                className="relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 focus-within:ring-offset-2 sm:h-11 sm:w-11"
+                className="text-foreground relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 sm:h-10 sm:w-10"
                 style={
                   isSelected
                     ? { "--tw-ring-color": skill.color }
@@ -162,7 +162,9 @@ function Skills() {
                 />
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none h-3 w-3 rounded-full border-2 transition-colors"
+                  className={`pointer-events-none h-3 w-3 rounded-full border-2 transition-all duration-200 ${
+                    isSelected ? "scale-150" : "scale-100"
+                  }`}
                   style={{
                     borderColor: isSelected ? skill.color : "#CBD5E1",
                     backgroundColor: isSelected ? skill.color : "#FFFFFF",
@@ -171,7 +173,7 @@ function Skills() {
                 <span
                   className={`pointer-events-none absolute left-1/2 -translate-x-1/2 whitespace-nowrap font-mono text-xs sm:text-sm ${
                     labelAbove ? "bottom-full mb-2" : "top-full mt-2"
-                  } ${isSelected ? "font-medium text-slate-900" : "text-slate-500"}`}
+                  } ${isSelected ? "font-medium text-foreground" : "text-muted-foreground"}`}
                 >
                   {skill.fileExtension}
                 </span>

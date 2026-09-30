@@ -23,6 +23,10 @@ export default function CircleBadge({
 }) {
   const maskId = useId();
 
+  const resolvedColor = circleColor.startsWith("var(")
+  ? circleColor
+  : `var(--${circleColor})`;
+
   return (
     <svg
       width={size}
@@ -46,7 +50,7 @@ export default function CircleBadge({
           {text}
         </text>
       </mask>
-      <circle cx="100" cy="100" r="90" fill={circleColor} mask={`url(#${maskId})`} />
+      <circle cx="100" cy="100" r="90" fill={resolvedColor} mask={`url(#${maskId})`} />
     </svg>
   );
 }

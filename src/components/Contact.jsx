@@ -29,7 +29,7 @@ function Contact() {
             Have a project in mind?
           </h1>
 
-          <p className="mt-4 max-w-xl text-gray-600">
+          <p className="mt-4 max-w-xl text-muted-foreground">
             Tell me what you're building and when you need it. I reply to every
             message within two working days.
           </p>
@@ -37,7 +37,7 @@ function Contact() {
 
         <div className="w-full">
           {/* Email */}
-          <div className="flex flex-col gap-2 border-y border-gray-300 p-3 md:flex-row sm:items-center sm:gap-4">
+          <div className="flex flex-col gap-2 border-y border-border  p-3 md:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">Email</span>
 
             <span className="min-w-0 break-all text-sm sm:text-base">
@@ -53,7 +53,7 @@ function Contact() {
           </div>
 
           {/* Github */}
-          <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
+          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">Github</span>
 
             <a href={`${contacts.github}`} className="min-w-0 break-all text-sm sm:text-base">
@@ -62,11 +62,20 @@ function Contact() {
           </div>
 
           {/* LinkedIn */}
-          <div className="flex flex-col gap-2 border-b border-gray-300 p-3 sm:flex-row sm:items-center sm:gap-4">
+          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">LinkedIn</span>
 
             <a href={`${contacts.linkedin}`} className="min-w-0 break-all text-sm sm:text-base">
               {contacts.linkedin}
+            </a>
+          </div>
+
+          {/* Facebook */}
+          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
+            <span className="shrink-0 font-medium sm:w-16">Facebook</span>
+
+            <a href={`${contacts.facebook}`} className="min-w-0 break-all text-sm sm:text-base">
+              {contacts.facebook}
             </a>
           </div>
         </div>

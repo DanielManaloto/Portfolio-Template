@@ -23,7 +23,7 @@ function About() {
           <p className="mb-8">{about.paragraphs}</p>
           {facts?.map((fact, index) => (
             <p
-              className="flex border-y border-gray-300 p-2"
+              className="flex border-y border-border p-2"
               key={fact.id || index}
             >
               <span className="w-40 shrink-0">{fact.label}</span>

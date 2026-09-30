@@ -30,15 +30,15 @@ function Projects() {
       <p>{sectionDescription}</p>
 
       {/* Filters */}
-      <div className="flex flex-wrap gap-1 pb-4 border-b border-gray-300 text-sm">
+      <div className="flex flex-wrap gap-1 pb-4 border-b border-border text-sm">
         {filters.map((item) => (
           <button
             key={item.label}
             onClick={() => setFilter(item.label)}
-            className={`px-3 py-1 rounded ${
+            className={`px-3 py-1 rounded  ${
               filter === item.label
-                ? "bg-black text-white"
-                : "bg-transparent text-gray-600 hover:bg-gray-100"
+                ? "bg-primary text-primary-foreground border-primary" 
+                : "bg-transparent text-foreground border-border hover:bg-muted-foreground"
             }`}
           >
             {item.label}
@@ -51,12 +51,12 @@ function Projects() {
         {filteredProjects.map((project) => (
           <div
             key={project.name}
-            className="grid sm:grid-cols-[200px_1fr] gap-6 border-b border-gray-300 pb-6"
+            className="grid sm:grid-cols-[200px_1fr] gap-6 border-b border-border pb-6"
           >
             {/* Image / preview trigger */}
             <button
               onClick={() => setPreviewProject(project)}
-              className="group relative h-50 w-full overflow-hidden self-center border border-gray-400 text-left"
+              className="group relative h-50 w-full overflow-hidden self-center border border-border bg-muted text-left"
             >
               {project.images[0] ? (
                 <img
@@ -68,11 +68,11 @@ function Projects() {
                   }}
                 />
               ) : (
-                <span className="flex h-full w-full items-center justify-center text-sm text-gray-500">
+                <span className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
                   Image Placeholder
                 </span>
               )}
-              <span className="absolute inset-0 flex items-center justify-center bg-black/0 text-sm text-white opacity-0 transition group-hover:bg-black/40 group-hover:opacity-100">
+              <span className="absolute inset-0 flex items-center justify-center bg-foreground/0 text-sm text-background opacity-0 transition group-hover:bg-foreground/60 group-hover:opacity-100">
                 Preview
               </span>
             </button>
@@ -83,7 +83,7 @@ function Projects() {
               {/* Languages */}
               <div className="flex gap-2">
                 {project.language.map((language) => (
-                  <span className ="border border-gray-400 rounded-full py-1 px-2 text-[12px]" key={language}> {language} </span>
+                  <span className="text-[12px] text-muted-foreground" key={language}> {language} </span>
                 ))}
               </div>
               {/* Preview trigger */}
