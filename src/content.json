@@ -400,14 +400,19 @@
         ]
       },
       {
-        "name": "PH Acquired Properties Scraper",
-        "description": "Scrapes publicly listed acquired/foreclosed real estate from four Philippine government and bank sources, combines them into one normalized dataset, and optionally loads everything into MySQL.",
+        "name": "Design and Development of an IoT-Based Real-Time Air Quality Detection and Classification System (CapstoneS)",
+        "description": "This study developed a real-time air quality monitoring system for PM2.5, PM10, and SO₂ using a Raspberry Pi 4 and sensors. The system achieved high accuracy and showed strong correlations with DENR-EMB data, demonstrating its potential for community-level air quality monitoring.",
         "language": [
           "Python"
         ],
         "hasLive": false,
         "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/ph-acquired-properties-scraper",
-        "images": []
+        "images": [
+          "/IOT/Capture.PNG",
+          "/IOT/Capture1.PNG",
+          "/IOT/Capture2.PNG",
+          "/IOT/Capture3.PNG"
+        ]
       },
       {
         "name": "TLS Analyzer",
@@ -556,12 +561,13 @@
     ]
   },
   "contact": {
-    "_comment": "The closing section. 'email', 'github', and 'linkedin' show as contact links — 'github' and 'linkedin' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
+    "_comment": "The closing section. 'email', 'github', 'linkedin' and 'facebook' show as contact links — 'github' and 'linkedin' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
     "sectionTitle": "Have a project or role in mind?",
     "sectionDescription": "Tell me about the embedded, systems, or web work you have in mind and when you need it. I reply to every message within two working days.",
     "email": "danieljmanaloto@gmail.com",
     "github": "https://github.com/DanielManaloto",
     "linkedin": "https://www.linkedin.com/in/daniel-james-manaloto-71a353318",
+    "facebook": "https://www.facebook.com/danieljames.manaloto",
     "formNote": "This opens a draft in your email app. Nothing is sent until you press send there."
   }
 }
