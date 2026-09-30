@@ -10,7 +10,7 @@ function Contact() {
   const handleCopy = async () => {
     try {
       if (!copied) {
-        await navigator.clipboard.writeText("mrs11.djmanaloto@gmail.com");
+        await navigator.clipboard.writeText(contacts.email);
         setCopied(true);
       }
 
@@ -45,7 +45,7 @@ function Contact() {
             </span>
 
             <button
-              className="w-fit shrink-0 text-sm underline sm:ml-auto"
+              className="w-fit shrink-0 text-sm hover:underline hover:bg-muted-foreground sm:ml-auto"
               onClick={handleCopy}
             >
               {copied ? "Copied!" : "Copy"}
