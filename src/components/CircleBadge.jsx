@@ -20,6 +20,7 @@ export default function CircleBadge({
   fontSize = 70,
   fontFamily = "Arial, sans-serif",
   fontWeight = "bold",
+  className = "",
 }) {
   const maskId = useId();
 
@@ -33,6 +34,7 @@ export default function CircleBadge({
       height={size}
       viewBox="0 0 200 200"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <mask id={maskId}>
         <rect width="200" height="200" fill="white" />

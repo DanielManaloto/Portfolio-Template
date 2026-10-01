@@ -71,18 +71,18 @@ function Navbar() {
         <a
           href="#home"
           aria-label={`${navbar.name}, back to top`}
-          className="flex min-h-11 shrink-0 items-center gap-2.5 text-lg font-bold text-foreground"
+          className="flex min-h-11 shrink-0 items-center gap-2.5 text-lg font-bold text-foreground hover:text-secondary-foreground"
         >
           <CircleBadge
             text={navbar.circleBadge}
             size={40}
             circleColor="foreground"
             fontSize="80"
+            className="cursor-pointer transition-transform duration-300 hover:scale-110"
           />
           <span className="max-[560px]:hidden">{navbar.name}</span>
         </a>
-
-        {/* Links stay inline at every width (no hamburger) */}
+        
         <ul className="m-0 flex list-none items-center gap-0.5 p-0">
           {navItems.map((item) => {
             const isActive = activeId === item.href.slice(1);
@@ -91,7 +91,7 @@ function Navbar() {
                 <a
                   href={item.href}
                   aria-current={isActive ? "true" : undefined}
-                  className={`flex min-h-11 items-center border-b-2 px-[7px] text-[15px] transition-colors duration-200 hover:text-foreground min-[561px]:px-2.5 min-[561px]:text-base ${
+                  className={`flex min-h-11 items-center border-b-2 px-1.75 text-[15px] transition-colors duration-200 hover:text-foreground min-[561px]:px-2.5 min-[561px]:text-base ${
                     isActive
                       ? "border-foreground text-foreground"
                       : "border-transparent text-muted-foreground"

@@ -56,7 +56,7 @@ function Contact() {
           <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">Github</span>
 
-            <a href={`${contacts.github}`} className="min-w-0 break-all text-sm sm:text-base">
+            <a href={`${contacts.github}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
               {contacts.github.slice(8,100)}
             </a>
           </div>
@@ -65,7 +65,7 @@ function Contact() {
           <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">LinkedIn</span>
 
-            <a href={`${contacts.linkedin}`} className="min-w-0 break-all text-sm sm:text-base">
+            <a href={`${contacts.linkedin}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
               {contacts.linkedin}
             </a>
           </div>
@@ -74,7 +74,7 @@ function Contact() {
           <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
             <span className="shrink-0 font-medium sm:w-16">Facebook</span>
 
-            <a href={`${contacts.facebook}`} className="min-w-0 break-all text-sm sm:text-base">
+            <a href={`${contacts.facebook}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
               {contacts.facebook}
             </a>
           </div>

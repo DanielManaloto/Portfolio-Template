@@ -68,11 +68,11 @@ function Projects() {
                   }}
                 />
               ) : (
-                <span className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
+                <span className="flex h-full w-full items-center justify-center text-sm text-muted">
                   Image Placeholder
                 </span>
               )}
-              <span className="absolute inset-0 flex items-center justify-center bg-foreground/0 text-sm text-background opacity-0 transition group-hover:bg-foreground/60 group-hover:opacity-100">
+              <span className="absolute inset-0 flex items-center justify-center bg-foreground/0 text-sm font-bold text-secondary opacity-0 transition group-hover:bg-foreground/40 group-hover:opacity-100">
                 Preview
               </span>
             </button>
@@ -90,7 +90,7 @@ function Projects() {
               <div className="flex gap-2">
                 <button
                   onClick={() => setPreviewProject(project)}
-                  className="hover:underline hover:bg-muted-foreground"
+                  className="hover:underline hover:bg-muted"
                 >
                   Preview
                 </button>

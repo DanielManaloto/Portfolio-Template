@@ -145,12 +145,11 @@ function Skills() {
             return (
               <label
                 key={skill.id}
-                className="text-foreground relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 sm:h-10 sm:w-10"
-                style={
-                  isSelected
-                    ? { "--tw-ring-color": skill.color }
-                    : { "--tw-ring-color": "#94A3B8" }
-                }
+                className="group text-foreground relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full focus-within:ring-2 sm:h-10 sm:w-10"
+                style={{
+                  "--tw-ring-color": isSelected ? skill.color : "#94A3B8",
+                  "--skill-color": skill.color,
+                }}
               >
                 <input
                   type="radio"
@@ -160,20 +159,35 @@ function Skills() {
                   onChange={handleSelectedLang}
                   className="sr-only"
                 />
+
+                {/* Hover halo */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute h-6 w-6 rounded-full opacity-0 transition-opacity duration-200 group-hover:opacity-20"
+                  style={{ backgroundColor: skill.color }}
+                />
+
+                {/* Dot */}
                 <span
                   aria-hidden="true"
                   className={`pointer-events-none h-3 w-3 rounded-full border-2 transition-all duration-200 ${
-                    isSelected ? "scale-150" : "scale-100"
+                    isSelected ? "scale-150" : "scale-100 group-hover:scale-125"
                   }`}
                   style={{
                     borderColor: isSelected ? skill.color : "#CBD5E1",
                     backgroundColor: isSelected ? skill.color : "#FFFFFF",
                   }}
                 />
+
+                {/* Extension label */}
                 <span
-                  className={`pointer-events-none absolute left-1/2 -translate-x-1/2 whitespace-nowrap font-mono text-xs sm:text-sm ${
+                  className={`pointer-events-none absolute left-1/2 -translate-x-1/2 whitespace-nowrap font-mono text-xs transition-colors duration-200 sm:text-sm ${
                     labelAbove ? "bottom-full mb-2" : "top-full mt-2"
-                  } ${isSelected ? "font-medium text-foreground" : "text-muted-foreground"}`}
+                  } ${
+                    isSelected
+                      ? "font-medium text-foreground"
+                      : "text-muted-foreground group-hover:text-foreground"
+                  }`}
                 >
                   {skill.fileExtension}
                 </span>
