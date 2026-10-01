@@ -5,6 +5,13 @@
     "name": "Daniel Manaloto",
     "circleBadge": "DM"
   },
+  "site": {
+    "_comment": "Browser tab title and icon. If 'favicon' is a file path (e.g. '/favicon.svg'), that file is used. If it's left empty (''), an icon is generated from navbar.circleBadge using the colors below.",
+    "title": "Daniel Manaloto — Embedded & Systems Software",
+    "favicon": "",
+    "faviconBackground": "#0b0b0b",
+    "faviconTextColor": "#ffffff"
+  },
   "home": {
     "_comment": "The introduction at the top of the page. 'primaryCta' and 'secondaryCta' are the two buttons; 'href' should point to a section id on the page, written as '#' plus that section's id (e.g. '#projects').",
     "name": "Daniel Manaloto",
@@ -41,7 +48,7 @@
     "paragraphs": [
       "I'm an Electronics and Communication Engineering graduate from Cavite State University who likes working where hardware meets software. My capstone was an IoT-based real-time air quality detection and classification system on a Raspberry Pi 4, validated against a DENR-EMB monitoring station, with classification accuracy of up to 97.89%.",
       "Outside of school I build low-level tools to learn how things work from the wire up: a live TLS handshake analyzer in C/C++, a Windows input recorder in C, and an autonomous Arduino sumobot.",
-      "On the web side, I build responsive, accessible interfaces with HTML, CSS, JavaScript, and React (JSX), including a Tailwind-styled todo app and a weather app on the Open-Meteo API. I'm looking for an entry-level role in embedded software, firmware, or systems engineering, and I'm happy to take on web projects too."
+      " On the web side, I build responsive, accessible interfaces with HTML, CSS, JavaScript, and React (JSX), including a Tailwind-styled todo app and a weather app on the Open-Meteo API. I'm looking for an entry-level role in embedded software, firmware, or systems engineering, and I'm happy to take on web projects too."
     ],
     "facts": [
       {
@@ -370,7 +377,15 @@
         "hasLive": true,
         "liveUrl": "https://example.com",
         "sourceUrl": "https://github.com/example/portfolio",
-        "images": []
+        "images": [
+          "MyPortfolio/home.png",
+          "MyPortfolio/about.png",
+          "MyPortfolio/projects.png",
+          "MyPortfolio/skills.png",
+          "MyPortfolio/contacts.png",
+          "MyPortfolio/desktop-design.png",
+          "MyPortfolio/mobile-design.png"
+        ]
       },
       {
         "name": "Bitmap Image Viewer",
@@ -400,7 +415,7 @@
         ]
       },
       {
-        "name": "Design and Development of an IoT-Based Real-Time Air Quality Detection and Classification System (CapstoneS)",
+        "name": "Design and Development of an IoT-Based Real-Time Air Quality Detection and Classification System (Capstone)",
         "description": "This study developed a real-time air quality monitoring system for PM2.5, PM10, and SO₂ using a Raspberry Pi 4 and sensors. The system achieved high accuracy and showed strong correlations with DENR-EMB data, demonstrating its potential for community-level air quality monitoring.",
         "language": [
           "Python"

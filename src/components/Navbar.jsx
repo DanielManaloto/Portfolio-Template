@@ -75,7 +75,7 @@ function Navbar() {
         >
           <CircleBadge
             text={navbar.circleBadge}
-            size={34}
+            size={40}
             circleColor="foreground"
             fontSize="80"
           />
