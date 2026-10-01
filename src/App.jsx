@@ -4,8 +4,10 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import useSiteMeta from "./components/useSiteMeta";
 
 function App() {
+  useSiteMeta();
   return (
     <div className="w-full min-h-screen bg-background text-foreground sm:px-55 px-5">
       <Navbar />
