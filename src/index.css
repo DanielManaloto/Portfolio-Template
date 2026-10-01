@@ -12,7 +12,7 @@
   --card: #ffffff;
   --card-foreground: var(--color-gray-950);
 
-  --muted: var(--color-gray-100);
+  --muted: var(--color-gray-400);
   --muted-foreground: var(--color-gray-500);
 
   --border: var(--color-gray-200);

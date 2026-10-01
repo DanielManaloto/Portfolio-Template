@@ -55,14 +55,14 @@ function Home() {
         <div className="flex gap-5">
           <a
             href={`${home.primaryCta.href}`}
-            className="border border-ring rounded-4xl py-2 px-4 whitespace-nowrap hover:bg-secondary"
+            className="border border-ring rounded-4xl py-2 px-4 whitespace-nowrap hover:bg-muted"
           >
             {home.primaryCta.label}
           </a>
 
           <a
             href={`${home.secondaryCta.href}`}
-            className="border border-ring rounded-4xl py-2 px-4 whitespace-nowrap hover:bg-secondary"
+            className="border border-ring rounded-4xl py-2 px-4 whitespace-nowrap hover:bg-muted"
           >
             {home.secondaryCta.label}
           </a>

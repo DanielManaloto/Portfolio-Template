@@ -45,7 +45,7 @@ function Contact() {
             </span>
 
             <button
-              className="w-fit shrink-0 text-sm hover:underline hover:bg-muted-foreground sm:ml-auto"
+              className="w-fit shrink-0 text-sm text-surface-foreground hover:underline hover:bg-muted sm:ml-auto"
               onClick={handleCopy}
             >
               {copied ? "Copied!" : "Copy"}

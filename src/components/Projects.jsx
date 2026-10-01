@@ -90,7 +90,7 @@ function Projects() {
               <div className="flex gap-2">
                 <button
                   onClick={() => setPreviewProject(project)}
-                  className="hover:underline hover:bg-muted"
+                  className="text-surface-foreground hover:underline hover:bg-muted"
                 >
                   Preview
                 </button>

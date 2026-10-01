@@ -81,7 +81,7 @@
       },
       {
         "label": "Availability",
-        "value": "Open to entry-level Embedded Software, Firmware, and Systems Engineering roles"
+        "value": "Open to entry-level Embedded Software, Firmware, Front-end, and Systems Engineering roles"
       }
     ]
   },
@@ -374,7 +374,7 @@
           "JS",
           "JSX"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://example.com",
         "sourceUrl": "https://github.com/example/portfolio",
         "images": [
@@ -393,7 +393,7 @@
         "language": [
           "C"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "",
         "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/bmp_viewer",
         "images": [
@@ -474,7 +474,7 @@
           "JS",
           "JSX"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-todo-app-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
         "images": [
@@ -492,7 +492,7 @@
           "CSS",
           "JS"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-weather-app-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
         "images": [
@@ -511,7 +511,7 @@
           "HTML",
           "CSS"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-order-summary-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
         "images": [
@@ -527,7 +527,7 @@
           "CSS",
           "JS"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-rating-component-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
         "images": [
@@ -545,7 +545,7 @@
           "HTML",
           "CSS"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-bento-grid-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
         "images": [
@@ -561,7 +561,7 @@
           "CSS",
           "JS"
         ],
-        "hasLive": true,
+        "hasLive": false,
         "liveUrl": "https://your-age-calculator-url.com",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
         "images": [
