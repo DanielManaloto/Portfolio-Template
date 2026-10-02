@@ -85,7 +85,7 @@
   },
   "skills": {
     "_comment": "The interactive language picker. 'endLabels' are the two captions shown at either end of the slider.",
-    "": "SKILLS SECTION: Title above the language picker",
+    "sectionTitle": "SKILLS SECTION: Title above the language picker",
     "sectionDescription": "SKILLS SECTION: A short intro explaining how your skills are organized and inviting visitors to pick a language to see how you use it.",
     "endLabels": {
       "start": "Left end label",
