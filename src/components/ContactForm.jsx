@@ -6,7 +6,7 @@ const { email: contactEmail, formNote } = content.contact;
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
 
 const fieldClass =
-  "w-full rounded-[3px] border border-input bg-muted text-foreground placeholder:text-muted-foreground px-3 outline-none transition-colors focus:border-ring focus:ring-1 focus:ring-ring disabled:opacity-60";
+  "w-full rounded-[3px] border border-input bg-input text-foreground placeholder:text-muted-foreground px-3 outline-none transition-colors focus:border-ring focus:ring-1 focus:ring-ring disabled:opacity-60";
 const labelClass = "mb-2 block text-[13px] leading-4 text-foreground";
 
 const EMPTY = { name: "", email: "", message: "" };
