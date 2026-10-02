@@ -366,7 +366,7 @@
     "_projectListGuide": "Each object below is one project card. Fields: name; description; language (an array of strings — use the exact spelling 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C', or 'C++' so the filters above match correctly); hasLive (true or false — whether to show a live-site link); liveUrl (only needed when hasLive is true); sourceUrl (link to the code); images (an array of image paths — leave it as [] to show a placeholder box instead of a photo). To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "projectList": [
       {
-        "name": "Portfolio Website",
+        "name": "Portfolio Template",
         "description": "My personal portfolio website.",
         "language": [
           "HTML",
@@ -374,9 +374,9 @@
           "JS",
           "JSX"
         ],
-        "hasLive": false,
-        "liveUrl": "https://example.com",
-        "sourceUrl": "https://github.com/example/portfolio",
+        "hasLive": true,
+        "liveUrl": "https://portfolio-template-lac-sigma.vercel.app/",
+        "sourceUrl": "https://github.com/DanielManaloto/Portfolio-Template",
         "images": [
           "MyPortfolio/home.png",
           "MyPortfolio/about.png",
@@ -474,8 +474,8 @@
           "JS",
           "JSX"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-todo-app-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/todo-app-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
         "images": [
           "/Todo-App/desktop-design-light.png",
@@ -492,8 +492,8 @@
           "CSS",
           "JS"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-weather-app-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/weather-app-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
         "images": [
           "/Weather-App/desktop-design-metric.png",
@@ -511,8 +511,8 @@
           "HTML",
           "CSS"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-order-summary-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/order-summary-component-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
         "images": [
           "/Order-Summary/desktop-design.png",
@@ -527,8 +527,8 @@
           "CSS",
           "JS"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-rating-component-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/interactive-rating-component-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
         "images": [
           "/Interactive-Rating/desktop-design.png",
@@ -545,8 +545,8 @@
           "HTML",
           "CSS"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-bento-grid-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/bento-grid-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
         "images": [
           "/Bento-Grid/desktop-design.png",
@@ -561,8 +561,8 @@
           "CSS",
           "JS"
         ],
-        "hasLive": false,
-        "liveUrl": "https://your-age-calculator-url.com",
+        "hasLive": true,
+        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/age-calculator-app-main/",
         "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
         "images": [
           "/Age-Calculator/complete-desktop-design.png",
