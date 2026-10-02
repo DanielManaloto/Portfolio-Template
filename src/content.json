@@ -2,104 +2,102 @@
   "_readme": "This file holds all the editable text, links, and content for the site. To change something, edit the value after the colon (the part in quotes, or the number/true/false). Do not rename anything before a colon — the code looks for those exact names — and don't remove any commas, quotes, curly braces {} or square brackets [], or the file will stop working. Any key starting with an underscore, like this one, is just a note for humans and isn't read by the site; feel free to delete them, but leaving them in place won't cause any problems.",
   "navbar": {
     "_comment": "The name and two-letter badge shown in the top navigation bar.",
-    "name": "Daniel Manaloto",
-    "circleBadge": "DM"
+    "name": "Your Name",
+    "circleBadge": "YN"
   },
   "site": {
     "_comment": "Browser tab title and icon. If 'favicon' is a file path (e.g. '/favicon.svg'), that file is used. If it's left empty (''), an icon is generated from navbar.circleBadge using the colors below.",
-    "title": "Daniel Manaloto — Embedded & Systems Software",
+    "title": "Your Name — Your Job Title or Specialty (shown in the browser tab)",
     "favicon": "",
     "faviconBackground": "#0b0b0b",
     "faviconTextColor": "#ffffff"
   },
   "home": {
     "_comment": "The introduction at the top of the page. 'primaryCta' and 'secondaryCta' are the two buttons; 'href' should point to a section id on the page, written as '#' plus that section's id (e.g. '#projects').",
-    "name": "Daniel Manaloto",
-    "role": "BSECE Graduate · Embedded & Systems Software · Web Dev",
-    "tagline": "I build embedded systems and low-level software in C/C++ and Python, plus fast, accessible websites in HTML, CSS, JavaScript, and React.",
+    "name": "Your Name",
+    "role": "Your Role · Your Specialty · Your Secondary Skill",
+    "tagline": "HOME SECTION: A one- or two-sentence introduction. Say what you build and what tools or languages you use, so visitors understand what you do right away.",
     "codeSnippet": {
-      "_comment": "Powers the small 'typed code' animation. 'writes' is the list of languages it types out, one per line — add, remove, or reorder them freely. 'status' is the last line it types.",
+      "_comment": "Powers the small 'typed code' animation. 'writes' is the list of languages it types out, three per line — add, remove, or reorder them freely. 'status' is the last line it types.",
       "variableName": "developer",
       "writes": [
-        "C",
-        "C++",
-        "Python",
-        "Bash",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "JSX"
+        "Language 1",
+        "Language 2",
+        "Language 3",
+        "Language 4",
+        "Language 5",
+        "Language 6"
       ],
-      "status": "open to work"
+      "status": "your availability"
     },
     "primaryCta": {
-      "label": "See my projects",
+      "label": "Main button",
       "href": "#projects"
     },
     "secondaryCta": {
-      "label": "Get in touch",
+      "label": "Second button",
       "href": "#contact"
     }
   },
   "about": {
     "_comment": "The 'About' section. 'imagePath' is the photo shown next to the text — add the image to the project's images and put its path here. 'paragraphs' is the body text: one string per paragraph, add or remove as needed. 'facts' are the label/value rows below the paragraphs; each item needs a short 'label' and its 'value' — add or remove items freely.",
-    "sectionTitle": "I like the whole path from circuit to packet to browser",
+    "sectionTitle": "ABOUT SECTION: A headline that sums up who you are or how you work",
     "imagePath": "portrait.jpg",
     "paragraphs": [
-      "I'm an Electronics and Communication Engineering graduate from Cavite State University who likes working where hardware meets software. My capstone was an IoT-based real-time air quality detection and classification system on a Raspberry Pi 4, validated against a DENR-EMB monitoring station, with classification accuracy of up to 97.89%.",
-      "Outside of school I build low-level tools to learn how things work from the wire up: a live TLS handshake analyzer in C/C++, a Windows input recorder in C, and an autonomous Arduino sumobot.",
-      " On the web side, I build responsive, accessible interfaces with HTML, CSS, JavaScript, and React (JSX), including a Tailwind-styled todo app and a weather app on the Open-Meteo API. I'm looking for an entry-level role in embedded software, firmware, or systems engineering, and I'm happy to take on web projects too."
+      "ABOUT SECTION, PARAGRAPH 1: Your background. Where you studied or trained, what field you work in, and one highlight such as a key project or result. ",
+      "ABOUT SECTION, PARAGRAPH 2: What you build or do outside of school or work, and what you enjoy learning. ",
+      "ABOUT SECTION, PARAGRAPH 3: What you're looking for next, such as the type of role, freelance work, or collaboration you're open to."
     ],
     "facts": [
       {
         "label": "Focus",
-        "value": "Embedded systems, systems programming, and network protocol analysis, plus front-end web development"
+        "value": "Your main area of work or specialty"
       },
       {
         "label": "Also comfortable with",
-        "value": "Circuit design and analysis, sensor interfacing, and hardware debugging"
+        "value": "Secondary skills or related areas"
       },
       {
         "label": "Education",
-        "value": "BS Electronics and Communication Engineering, Cavite State University (2021 – 2026)"
+        "value": "Degree, school, and years attended"
       },
       {
         "label": "Experience",
-        "value": "Data Entry & Operations Intern, Prime Water Inc. Dasma (Jul – Aug 2025)"
+        "value": "Most recent job or internship, company, and dates"
       },
       {
         "label": "Web stack",
-        "value": "HTML, CSS, JavaScript, React (JSX), and Tailwind CSS"
+        "value": "The frameworks and technologies you use for web work"
       },
       {
         "label": "Tools",
-        "value": "Git, CMake, Make, Docker, VS Code, Visual Studio"
+        "value": "Version control, build tools, editors, and other software you use"
       },
       {
         "label": "Achievement",
-        "value": "1st Runner-Up, IECEP Cavite Datathon Programming Competition (Nov 2023)"
+        "value": "An award, competition result, or certification, with the date"
       },
       {
         "label": "Availability",
-        "value": "Open to entry-level Embedded Software, Firmware, Front-end, and Systems Engineering roles"
+        "value": "The kinds of roles or projects you're open to"
       }
     ]
   },
   "skills": {
     "_comment": "The interactive language picker. 'endLabels' are the two captions shown at either end of the slider.",
-    "sectionTitle": "Six languages, from the browser to the machine",
-    "sectionDescription": "Most of my day is spent in the browser stack. Python and C round out the automation work and the parts that need to run close to the hardware. Pick a language to see how I use it.",
+    "": "SKILLS SECTION: Title above the language picker",
+    "sectionDescription": "SKILLS SECTION: A short intro explaining how your skills are organized and inviting visitors to pick a language to see how you use it.",
     "endLabels": {
-      "start": "Runs in the browser",
-      "end": "Runs close to the hardware"
+      "start": "Left end label",
+      "end": "Right end label"
     },
     "_skillCardContentGuide": "Each object in the list below is one language card. Fields: id (short, unique, lowercase — not shown on screen, just used internally); language (the big heading, e.g. 'JavaScript'); fileExtension (the small pill next to it, e.g. '.js'); color (a hex code like '#E0A800' used for that card's accent color); confidence (a number from 1 to 5 — how many bars are filled in); lineCount (how many lines the 'code' sample below produces — this must match or the line numbers won't line up); code (the snippet in the little code window, split into pieces — each piece has 'text', with \\n marking where a new line starts, and 'className', which should be '' for plain text, 'text-sky-400' for keywords, 'text-amber-300' for function or class names, or 'text-emerald-400' for strings); useWith and builtWith (one sentence each, shown on the right of the card); workWith (the fileExtensions, like '.css', of related languages — these become the clickable pills that jump to that card). To add a language, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "confidenceLabels": {
-      "1": "Just getting started",
-      "2": "Learning",
-      "3": "Working knowledge",
-      "4": "Confident",
-      "5": "Daily driver"
+      "1": "Confidence level 1 label",
+      "2": "Confidence level 2 label",
+      "3": "Confidence level 3 label",
+      "4": "Confidence level 4 label",
+      "5": "Confidence level 5 label"
     },
     "skillCardContent": [
       {
@@ -108,31 +106,31 @@
         "fileExtension": ".html",
         "color": "#E4572E",
         "confidence": 5,
-        "lineCount": 4,
+        "lineCount": 2,
         "code": [
           {
-            "text": "<header>\n  <h1>",
+            "text": "<h1>",
             "className": "text-sky-400"
           },
           {
-            "text": "Alex Santos",
+            "text": "Page heading",
             "className": ""
           },
           {
-            "text": "</h1>\n  <p>",
+            "text": "</h1>\n<p>",
             "className": "text-sky-400"
           },
           {
-            "text": "Web developer",
+            "text": "Paragraph text",
             "className": ""
           },
           {
-            "text": "</p>\n</header>",
+            "text": "</p>",
             "className": "text-sky-400"
           }
         ],
-        "useWith": "Semantic page structure and accessible, validated forms, including custom-styled radio inputs and error states.",
-        "builtWith": "Frontend Mentor challenge solutions like a rating card, an age calculator, and an order summary card, plus this portfolio.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".css",
           ".js"
@@ -155,12 +153,12 @@
             "className": "text-sky-400"
           },
           {
-            "text": ";\n  padding: 1rem;\n}",
+            "text": ";\n}",
             "className": ""
           }
         ],
-        "useWith": "Flexbox and CSS Grid layouts with named grid areas, media queries for responsive design, and light and dark theming.",
-        "builtWith": "A responsive bento grid, an order summary card, and the layouts for the weather and todo apps, from phone to desktop.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".html",
           ".jsx"
@@ -187,8 +185,8 @@
             "className": ""
           }
         ],
-        "useWith": "DOM scripting, async data fetching from public APIs, debounced search, and form validation.",
-        "builtWith": "A weather app on the Open-Meteo API with 7-day forecasts and unit switching, an age calculator, and an interactive rating card.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".jsx",
           ".py"
@@ -207,23 +205,23 @@
             "className": "text-sky-400"
           },
           {
-            "text": "Skill",
+            "text": "Card",
             "className": "text-amber-300"
           },
           {
-            "text": "({ name }) {\n  return ",
+            "text": "({ title }) {\n  return ",
             "className": ""
           },
           {
-            "text": "<li>",
+            "text": "<h2>",
             "className": "text-sky-400"
           },
           {
-            "text": "{name}",
+            "text": "{title}",
             "className": ""
           },
           {
-            "text": "</li>",
+            "text": "</h2>",
             "className": "text-sky-400"
           },
           {
@@ -231,8 +229,8 @@
             "className": ""
           }
         ],
-        "useWith": "React components with hooks and props, state-driven UI, and Tailwind CSS styling.",
-        "builtWith": "A todo app with filtering, drag-and-drop reordering, and a persistent light/dark theme, plus this portfolio site.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".js",
           ".css"
@@ -251,16 +249,16 @@
             "className": "text-sky-400"
           },
           {
-            "text": "average",
+            "text": "greet",
             "className": "text-amber-300"
           },
           {
-            "text": "(nums):\n    return sum(nums) / len(nums)",
+            "text": "(name):\n    return f\"Hello, {name}\"",
             "className": ""
           }
         ],
-        "useWith": "Web scraping and data normalization, emulators, and real-time sensor data collection and classification on the Raspberry Pi.",
-        "builtWith": "My capstone, an IoT air quality monitor on a Raspberry Pi 4 with up to 97.89% accuracy, an LC-3 virtual machine, and a scraper that merges four Philippine property sources with optional MySQL loading.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".js",
           ".c"
@@ -291,8 +289,8 @@
             "className": ""
           }
         ],
-        "useWith": "C++ for GUI and application layers on top of C engines, and Arduino C++ for embedded control logic.",
-        "builtWith": "The Dear ImGui frontend of my TLS Analyzer, and an autonomous Arduino sumobot with ultrasonic and IR sensing and L298N motor control.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".c"
         ]
@@ -318,8 +316,8 @@
             "className": ""
           }
         ],
-        "useWith": "Systems-level programming: packet capture and parsing, TCP reassembly, Win32 API hooks, and manual memory management.",
-        "builtWith": "The capture and parsing engine of my TLS Analyzer, the WinEventHook input recorder and replayer, and a BMP image viewer using SDL2.",
+        "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
+        "builtWith": "SKILL CARD: One sentence on what you've built with it, such as projects, tools, or coursework.",
         "workWith": [
           ".py"
         ]
@@ -328,8 +326,8 @@
   },
   "projects": {
     "_comment": "The projects grid and its filter buttons.",
-    "sectionTitle": "Projects I've built",
-    "sectionDescription": "A mix of client work, side projects, and coursework.",
+    "sectionTitle": "PROJECTS SECTION: Title above the project list",
+    "sectionDescription": "PROJECTS SECTION: A short intro describing the kinds of projects below, such as client work, side projects, or coursework.",
     "_filtersGuide": "Each filter button needs a 'label' (the text on the button). The 'All' button has no 'languages' field and always shows every project. Every other button needs a 'languages' array — a project shows under that filter if any of its own 'language' values are in this list. Group languages together the way 'C / C++' does below if you want one button to match more than one language.",
     "filters": [
       {
@@ -363,11 +361,24 @@
         ]
       }
     ],
-    "_projectListGuide": "Each object below is one project card. Fields: name; description; language (an array of strings — use the exact spelling 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C', or 'C++' so the filters above match correctly); hasLive (true or false — whether to show a live-site link); liveUrl (only needed when hasLive is true); sourceUrl (link to the code); images (an array of image paths — leave it as [] to show a placeholder box instead of a photo). To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
+    "_projectListGuide": "Each object below is one project card. Fields: name; description; language (an array of strings — use the exact spelling 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C', or 'C++' so the filters above match correctly); hasLive (true or false — whether to show a live-site link); liveUrl (only needed when hasLive is true); sourceUrl (link to the code); images (an array of image paths — leave it as [] to show a placeholder box instead of a photo). Each project 'name' must be unique. To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "projectList": [
       {
-        "name": "Portfolio Template",
-        "description": "My personal portfolio website.",
+        "name": "Project 1: Web Project (HTML, CSS, JS)",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one has a live demo link and appears under the HTML / CSS / JS filter.",
+        "language": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "hasLive": true,
+        "liveUrl": "https://example.com",
+        "sourceUrl": "https://github.com/your-username/web-project",
+        "images": []
+      },
+      {
+        "name": "Project 2: React Project (JSX)",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one is tagged JSX, so it shows under the JSX filter and also under HTML / CSS / JS because it lists those languages too.",
         "language": [
           "HTML",
           "CSS",
@@ -375,214 +386,63 @@
           "JSX"
         ],
         "hasLive": true,
-        "liveUrl": "https://portfolio-template-lac-sigma.vercel.app/",
-        "sourceUrl": "https://github.com/DanielManaloto/Portfolio-Template",
-        "images": [
-          "MyPortfolio/home.png",
-          "MyPortfolio/about.png",
-          "MyPortfolio/projects.png",
-          "MyPortfolio/skills.png",
-          "MyPortfolio/contacts.png",
-          "MyPortfolio/desktop-design.png",
-          "MyPortfolio/mobile-design.png"
-        ]
+        "liveUrl": "https://example.com",
+        "sourceUrl": "https://github.com/your-username/react-project",
+        "images": []
       },
       {
-        "name": "Bitmap Image Viewer",
-        "description": "A simple BMP image viewer written in C using SDL2. This project focuses on parsing and rendering BMP files with support for multiple formats and compression types.",
+        "name": "Project 3: Python Project",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one has no live link (hasLive is false), so only the Source Code button appears in its preview.",
+        "language": [
+          "Python"
+        ],
+        "hasLive": false,
+        "sourceUrl": "https://github.com/your-username/python-project",
+        "images": []
+      },
+      {
+        "name": "Project 4: C Project",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one appears under the C / C++ filter.",
         "language": [
           "C"
         ],
         "hasLive": false,
-        "liveUrl": "",
-        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/bmp_viewer",
-        "images": [
-          "/BMP-Viewer/Capture3.PNG",
-          "/BMP-Viewer/Capture4.PNG"
-        ]
+        "sourceUrl": "https://github.com/your-username/c-project",
+        "images": []
       },
       {
-        "name": "LC-3 Virtual Machine (Python)",
-        "description": "A simple LC-3 (Little Computer 3) virtual machine implemented in Python. This project emulates the LC-3 architecture, including registers, memory, instruction set, and trap routines.",
-        "language": [
-          "Python"
-        ],
-        "hasLive": false,
-        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/python_lc3",
-        "images": [
-          "/Python-LC3/Capture.PNG",
-          "/Python-LC3/Capture2.PNG"
-        ]
-      },
-      {
-        "name": "Design and Development of an IoT-Based Real-Time Air Quality Detection and Classification System (Capstone)",
-        "description": "This study developed a real-time air quality monitoring system for PM2.5, PM10, and SO₂ using a Raspberry Pi 4 and sensors. The system achieved high accuracy and showed strong correlations with DENR-EMB data, demonstrating its potential for community-level air quality monitoring.",
-        "language": [
-          "Python"
-        ],
-        "hasLive": false,
-        "sourceUrl": "https://github.com/DanielManaloto/my_projects/tree/main/ph-acquired-properties-scraper",
-        "images": [
-          "/IOT/Capture.PNG",
-          "/IOT/Capture1.PNG",
-          "/IOT/Capture2.PNG",
-          "/IOT/Capture3.PNG"
-        ]
-      },
-      {
-        "name": "TLS Analyzer",
-        "description": "A from-scratch, live TLS handshake inspector — built to learn packet capture, protocol parsing, and systems programming from the wire up.",
+        "name": "Project 5: Mixed C / C++ Project",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one lists both C and C++ as its languages.",
         "language": [
           "C",
           "C++"
         ],
         "hasLive": false,
-        "sourceUrl": "https://github.com/DanielManaloto/TLS-Analyzer",
-        "images": [
-          "/TLS-Analyzer/TLS_ANALYZER_LOGO.png",
-          "/TLS-Analyzer/Capture1.PNG",
-          "/TLS-Analyzer/Capture2.PNG",
-          "/TLS-Analyzer/Capture3.PNG",
-          "/TLS-Analyzer/Capture4.PNG",
-          "/TLS-Analyzer/Capture5.PNG",
-          "/TLS-Analyzer/Capture6.PNG",
-          "/TLS-Analyzer/architecture-diagram.svg"
-        ]
+        "sourceUrl": "https://github.com/your-username/c-cpp-project",
+        "images": []
       },
       {
-        "name": "WinEventHook",
-        "description": "A lightweight Windows console application written in C using the Win32 API. WinEventHook records and replays keyboard and mouse input using low-level Windows hooks and SendInput().",
-        "language": [
-          "C"
-        ],
-        "hasLive": false,
-        "sourceUrl": "https://github.com/DanielManaloto/WinEventHook",
-        "images": [
-          "/WinEventHook/WInEventHook.PNG",
-          "/WinEventHook/Recording.PNG",
-          "/WinEventHook/Select-Recording.PNG",
-          "/WinEventHook/Save-Recording.PNG",
-          "/WinEventHook/Save-Recording.PNG"
-        ]
-      },
-      {
-        "name": "Todo App",
-        "description": "A responsive todo app built with React and Tailwind CSS. Supports adding, completing, deleting, and filtering todos, a persistent light/dark theme, and drag-and-drop reordering using the native HTML5 Drag and Drop API.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS",
-          "JSX"
-        ],
-        "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/todo-app-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/todo-app-main",
-        "images": [
-          "/Todo-App/desktop-design-light.png",
-          "/Todo-App/desktop-design-dark.png",
-          "/Todo-App/mobile-design-light.png",
-          "/Todo-App/mobile-design-dark.png"
-        ]
-      },
-      {
-        "name": "Weather App",
-        "description": "A weather app built with vanilla JavaScript and the Open-Meteo API. Features city search with debounced autocomplete, current conditions, hourly and 7-day forecasts, and switchable metric/imperial units, all in a responsive layout.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/weather-app-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/weather-app-main",
-        "images": [
-          "/Weather-App/desktop-design-metric.png",
-          "/Weather-App/desktop-design-imperial.png",
-          "/Weather-App/mobile-design.png",
-          "/Weather-App/no-result-state.png",
-          "/Weather-App/loading-state.png",
-          "/Weather-App/dropdown-state.png"
-        ]
-      },
-      {
-        "name": "Order Summary Card",
-        "description": "A small order summary card built as a Flexbox layout exercise. Uses Flexbox for centering and stacking the card contents, with hover states on the interactive elements.",
+        "name": "Project 6: Small Layout Exercise",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. Good for coursework, challenges, and short exercises.",
         "language": [
           "HTML",
           "CSS"
         ],
         "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/order-summary-component-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/order-summary-component-main",
-        "images": [
-          "/Order-Summary/desktop-design.png",
-          "/Order-Summary/mobile-design.png"
-        ]
-      },
-      {
-        "name": "Interactive Rating Component",
-        "description": "An interactive rating card with a \"Thank you\" state after submitting. Uses visually restyled radio buttons for single-select ratings and JavaScript to switch between states.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/interactive-rating-component-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/interactive-rating-component-main",
-        "images": [
-          "/Interactive-Rating/desktop-design.png",
-          "/Interactive-Rating/desktop-thankyou-state.png",
-          "/Interactive-Rating/active-state.png",
-          "/Interactive-Rating/mobile-design.png",
-          "/Interactive-Rating/mobile-thankyou-state.png"
-        ]
-      },
-      {
-        "name": "Bento Grid",
-        "description": "A responsive bento grid layout built with CSS Grid. Uses named grid areas and media queries to rearrange the boxes across mobile, tablet, and desktop screens.",
-        "language": [
-          "HTML",
-          "CSS"
-        ],
-        "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/bento-grid-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/bento-grid-main",
-        "images": [
-          "/Bento-Grid/desktop-design.png",
-          "/Bento-Grid/mobile-design.png"
-        ]
-      },
-      {
-        "name": "Age Calculator App",
-        "description": "An age calculator that takes a birth date and shows the age in years, months, and days. Includes form validation for empty, out-of-range, invalid, and future dates, with a responsive layout.",
-        "language": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "hasLive": true,
-        "liveUrl": "https://frontend-mentor-challenge-solutions-udxf-r9unyc85y-daniel-m4.vercel.app/age-calculator-app-main/",
-        "sourceUrl": "https://github.com/DanielManaloto/frontend-mentor-challenge-solutions/tree/main/age-calculator-app-main",
-        "images": [
-          "/Age-Calculator/complete-desktop-design.png",
-          "/Age-Calculator/complete-state.png",
-          "/Age-Calculator/desktop-design.png",
-          "/Age-Calculator/desktop-error-empty.png",
-          "/Age-Calculator/desktop-error-invalid.png",
-          "/Age-Calculator/mobile-design.png"
-        ]
+        "liveUrl": "https://example.com",
+        "sourceUrl": "https://github.com/your-username/layout-exercise",
+        "images": []
       }
     ]
   },
   "contact": {
-    "_comment": "The closing section. 'email', 'github', 'linkedin' and 'facebook' show as contact links — 'github' and 'linkedin' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
-    "sectionTitle": "Have a project or role in mind?",
-    "sectionDescription": "Tell me about the embedded, systems, or web work you have in mind and when you need it. I reply to every message within two working days.",
-    "email": "danieljmanaloto@gmail.com",
-    "github": "https://github.com/DanielManaloto",
-    "linkedin": "https://www.linkedin.com/in/daniel-james-manaloto-71a353318",
-    "facebook": "https://www.facebook.com/danieljames.manaloto",
-    "formNote": "This opens a draft in your email app. Nothing is sent until you press send there."
+    "_comment": "The closing section. 'email', 'github', 'linkedin' and 'facebook' show as contact links — 'github', 'linkedin' and 'facebook' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
+    "sectionTitle": "CONTACT SECTION: Title above the contact details",
+    "sectionDescription": "CONTACT SECTION: A short invitation to get in touch, including how quickly you reply.",
+    "email": "your.email@example.com",
+    "github": "https://github.com/your-username",
+    "linkedin": "https://www.linkedin.com/in/your-profile",
+    "facebook": "https://www.facebook.com/your-profile",
+    "formNote": "CONTACT FORM NOTE: Small print under the message form, such as what happens when the visitor presses send."
   }
 }
