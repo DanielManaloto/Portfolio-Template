@@ -3,8 +3,9 @@ import IDE from "./IDE";
 
 import content from "../content.json";
 
-const skillCardContent = content.skills.skillCardContent;
-const confidenceLabels = content.skills.confidenceLabels;
+const skills = content.skills;
+const skillCardContent = skills.skillCardContent;
+const confidenceLabels = skills.confidenceLabels;
 
 const findSkill = (ext) =>
   skillCardContent.find((skill) => skill.fileExtension === ext);
@@ -118,12 +119,10 @@ function Skills() {
     <section className="mx-auto flex w-full max-w-4xl flex-col gap-10 py-12">
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-          Six languages, from the browser to the machine
+          {skills.sectionTitle}
         </h2>
         <p className="mt-3 text-surface-foreground">
-          Most of my day is spent in the browser stack. Python and C round out
-          the automation work and the parts that need to run close to the
-          hardware. Pick a language to see how I use it.
+          {skills.sectionDescription}
         </p>
       </div>
 
