@@ -68,7 +68,7 @@ function Projects() {
                   }}
                 />
               ) : (
-                <span className="flex h-full w-full items-center justify-center text-sm text-muted">
+                <span className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
                   Image Placeholder
                 </span>
               )}

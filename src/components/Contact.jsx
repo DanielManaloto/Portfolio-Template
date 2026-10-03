@@ -26,12 +26,11 @@ function Contact() {
       <div className="flex min-w-0 flex-1 flex-col gap-8">
         <div>
           <h1 className="text-3xl font-semibold sm:text-4xl">
-            Have a project in mind?
+            {contacts.sectionTitle}
           </h1>
 
           <p className="mt-4 max-w-xl text-muted-foreground">
-            Tell me what you're building and when you need it. I reply to every
-            message within two working days.
+            {contacts.sectionDescription}
           </p>
         </div>
 

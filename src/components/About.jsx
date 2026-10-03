@@ -20,7 +20,12 @@ function About() {
 
         {/* Text */}
         <div className="w-full sm:w-3/5">
-          <p className="mb-8">{about.paragraphs}</p>
+          <div className="mb-8">
+            {about.paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+
           {facts?.map((fact, index) => (
             <p
               className="flex border-y border-border p-2"

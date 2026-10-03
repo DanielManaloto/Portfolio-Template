@@ -196,8 +196,8 @@ function Skills() {
         </div>
 
         <div className="mt-8 flex justify-between text-xs text-slate-500 sm:text-sm md:mt-4">
-          <span>Runs in the browser</span>
-          <span>Runs close to the hardware</span>
+          <span>{skills.endLabels.start}</span>
+          <span>{skills.endLabels.end}</span>
         </div>
       </div>
 
