@@ -151,7 +151,7 @@ function ContactForm() {
           <div role="status" aria-live="polite" className="mt-[15px] min-h-[19px]">
             {status === "success" && (
               <p className="text-[12px] leading-[19px] text-emerald-600 dark:text-emerald-400">
-                Message sent. I'll reply within two working days.
+                {formNote}
               </p>
             )}
             {status === "error" && (

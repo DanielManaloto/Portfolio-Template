@@ -74,7 +74,7 @@ function Home() {
           height="16rem"
           tabs={[
             {
-              name: "developer.js",
+              name: `${variableName}.js`,
               language: "JS",
               active: true,
               closable: true,
