@@ -2,9 +2,9 @@
 
 A single-page portfolio template built with React, Vite and Tailwind CSS. All text, links, skills and projects live in one JSON file, so you can publish a personalized site without touching the component code.
 
-**Live demo:** [https://your-demo-url.example.com](https://your-demo-url.example.com)
+**Live demo:** [Demo](https://portfolio-template-lac-sigma.vercel.app/)
 
-![Portfolio template preview](docs/preview.png)
+![Portfolio template preview](public\Portfolio-Template-preview.gif)
 
 ## Table of Contents
 
