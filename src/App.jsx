@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import useSiteMeta from "./components/useSiteMeta";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   useSiteMeta();
