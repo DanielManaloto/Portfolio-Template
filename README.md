@@ -29,8 +29,8 @@ A single-page portfolio template built with React, Vite and Tailwind CSS. All te
 
 | | |
 | --- | --- |
-| Live demo | [https://your-demo-url.example.com](https://your-demo-url.example.com) |
-| Source | [https://github.com/your-username/your-repository](https://github.com/your-username/your-repository) |
+| Live demo | [https://portfolio-template-lac-sigma.vercel.app/](https://portfolio-template-lac-sigma.vercel.app/) |
+| Source | [https://github.com/DanielManaloto/Portfolio-Template](https://github.com/DanielManaloto/Portfolio-Template) |
 
 The demo uses the placeholder content from `src/content.json`, so you can see every section and interaction before changing anything. Try the following:
 
