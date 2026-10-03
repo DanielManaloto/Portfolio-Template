@@ -1,24 +1,24 @@
 {
-  "_readme": "This file holds all the editable text, links, and content for the site. To change something, edit the value after the colon (the part in quotes, or the number/true/false). Do not rename anything before a colon — the code looks for those exact names — and don't remove any commas, quotes, curly braces {} or square brackets [], or the file will stop working. Any key starting with an underscore, like this one, is just a note for humans and isn't read by the site; feel free to delete them, but leaving them in place won't cause any problems.",
+  "_readme": "This file holds most of the editable text, links, and content for the site. To change something, edit the value after the colon (the part in quotes, or the number/true/false). Do not rename anything before a colon — the code looks for those exact names — and don't remove any commas, quotes, curly braces {} or square brackets [], or the file will stop working. A few small labels are written directly in the code and cannot be changed here: the navigation link names, the contact and form labels and buttons (Email, Your name, Send message, Copy), the headings inside each skill card (What I use it for, etc.), the project buttons (Preview, Live Site, Source Code), the 'No projects found.' message, and the 'Running developer.js' status and 'index.js' tab in the home code window. Any key starting with an underscore, like this one, is just a note for humans and isn't read by the site; feel free to delete them, but leaving them in place won't cause any problems.",
   "navbar": {
-    "_comment": "The name and two-letter badge shown in the top navigation bar.",
+    "_comment": "The name and the short badge text (about two letters) shown in the top navigation bar. On narrow screens only the badge is shown. The badge text is also used for the generated browser-tab icon (see 'site').",
     "name": "Your Name",
     "circleBadge": "YN"
   },
   "site": {
-    "_comment": "Browser tab title and icon. If 'favicon' is a file path (e.g. '/favicon.svg'), that file is used. If it's left empty (''), an icon is generated from navbar.circleBadge using the colors below.",
+    "_comment": "Browser tab title and icon. If 'favicon' is a path to a file in the project's 'public' folder (e.g. '/favicon.svg'), that file is used and the two color fields below are ignored. If 'favicon' is left empty (''), an icon is generated from navbar.circleBadge using those two colors.",
     "title": "Your Name — Your Job Title or Specialty (shown in the browser tab)",
     "favicon": "",
     "faviconBackground": "#0b0b0b",
     "faviconTextColor": "#ffffff"
   },
   "home": {
-    "_comment": "The introduction at the top of the page. 'primaryCta' and 'secondaryCta' are the two buttons; 'href' should point to a section id on the page, written as '#' plus that section's id (e.g. '#projects').",
+    "_comment": "The introduction at the top of the page. 'primaryCta' and 'secondaryCta' are the two buttons; 'href' should point to a section id on the page, written as '#' plus that section's id (the ids are home, about, projects, skills and contact, e.g. '#projects').",
     "name": "Your Name",
     "role": "Your Role · Your Specialty · Your Secondary Skill",
     "tagline": "HOME SECTION: A one- or two-sentence introduction. Say what you build and what tools or languages you use, so visitors understand what you do right away.",
     "codeSnippet": {
-      "_comment": "Powers the small 'typed code' animation. 'writes' is the list of languages it types out, three per line — add, remove, or reorder them freely. 'status' is the last line it types.",
+      "_comment": "Powers the small 'typed code' animation. 'variableName' is the variable in the snippet and also the file name on the editor tab (variableName.js). 'writes' is the list of languages it types out, three per line — add, remove, or reorder them freely. 'status' is the last line it types, and once typing finishes it is also shown (with a capital first letter) in the editor's status bar.",
       "variableName": "developer",
       "writes": [
         "Language 1",
@@ -40,9 +40,9 @@
     }
   },
   "about": {
-    "_comment": "The 'About' section. 'imagePath' is the photo shown next to the text — add the image to the project's images and put its path here. 'paragraphs' is the body text: one string per paragraph, add or remove as needed. 'facts' are the label/value rows below the paragraphs; each item needs a short 'label' and its 'value' — add or remove items freely.",
+    "_comment": "The 'About' section. 'imagePath' is the photo shown next to the text. Put the image file in the project's 'public' folder and write its name or path here (e.g. 'portrait.jpg'); .jpg or .png is safer than .jfif. A wrong path shows a broken image, and the photo can't be removed from this file alone. 'paragraphs' is the body text: one string per paragraph, add or remove as needed. 'facts' are the label/value rows below the paragraphs; each item needs a short 'label' and its 'value' — add or remove items freely.",
     "sectionTitle": "ABOUT SECTION: A headline that sums up who you are or how you work",
-    "imagePath": "portrait.jpg",
+    "imagePath": "portrait.jfif",
     "paragraphs": [
       "ABOUT SECTION, PARAGRAPH 1: Your background. Where you studied or trained, what field you work in, and one highlight such as a key project or result. ",
       "ABOUT SECTION, PARAGRAPH 2: What you build or do outside of school or work, and what you enjoy learning. ",
@@ -84,15 +84,16 @@
     ]
   },
   "skills": {
-    "_comment": "The interactive language picker. 'endLabels' are the two captions shown at either end of the slider.",
+    "_comment": "The interactive language picker. Cards appear on the slider in the order they are listed, as evenly spaced dots, and the first card is selected when the page loads. 'endLabels' are the two captions under the left and right ends of the slider.",
     "sectionTitle": "SKILLS SECTION: Title above the language picker",
     "sectionDescription": "SKILLS SECTION: A short intro explaining how your skills are organized and inviting visitors to pick a language to see how you use it.",
     "endLabels": {
       "start": "Left end label",
       "end": "Right end label"
     },
-    "_skillCardContentGuide": "Each object in the list below is one language card. Fields: id (short, unique, lowercase — not shown on screen, just used internally); language (the big heading, e.g. 'JavaScript'); fileExtension (the small pill next to it, e.g. '.js'); color (a hex code like '#E0A800' used for that card's accent color); confidence (a number from 1 to 5 — how many bars are filled in); lineCount (how many lines the 'code' sample below produces — this must match or the line numbers won't line up); code (the snippet in the little code window, split into pieces — each piece has 'text', with \\n marking where a new line starts, and 'className', which should be '' for plain text, 'text-sky-400' for keywords, 'text-amber-300' for function or class names, or 'text-emerald-400' for strings); useWith and builtWith (one sentence each, shown on the right of the card); workWith (the fileExtensions, like '.css', of related languages — these become the clickable pills that jump to that card). To add a language, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
+    "_skillCardContentGuide": "Each object in the list below is one language card. Fields: id (short, unique, lowercase — not shown on screen, just used internally); language (the big heading, e.g. 'JavaScript'); fileExtension (the small pill next to it and the label under its slider dot, e.g. '.js'); color (a hex code like '#E0A800' used for that card's accent color); confidence (a number from 1 to 5 — how many bars are filled in, and which label from 'confidenceLabels' is shown); code (the snippet in the little code window, split into pieces — each piece has 'text', with \\n marking where a new line starts, and an optional 'className' for color: leave it out for plain text, or use 'text-sky-400' for keywords, 'text-amber-300' for function or class names, or 'text-emerald-400' for strings; the window is a fixed height of about five lines, so longer snippets scroll); useWith and builtWith (one sentence each, shown on the right of the card); workWith (the fileExtensions, like '.css', of related languages — these become clickable pills that jump to that card; each one must exactly match the fileExtension of another card, otherwise it shows as a pill that does nothing). To add a language, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "confidenceLabels": {
+      "_comment": "The text shown next to the bars. Keep a label for every confidence number (1 to 5) that any card uses.",
       "1": "Confidence level 1 label",
       "2": "Confidence level 2 label",
       "3": "Confidence level 3 label",
@@ -106,23 +107,20 @@
         "fileExtension": ".html",
         "color": "#E4572E",
         "confidence": 5,
-        "lineCount": 2,
         "code": [
           {
             "text": "<h1>",
             "className": "text-sky-400"
           },
           {
-            "text": "Page heading",
-            "className": ""
+            "text": "Page heading"
           },
           {
             "text": "</h1>\n<p>",
             "className": "text-sky-400"
           },
           {
-            "text": "Paragraph text",
-            "className": ""
+            "text": "Paragraph text"
           },
           {
             "text": "</p>",
@@ -142,19 +140,16 @@
         "fileExtension": ".css",
         "color": "#2F6FED",
         "confidence": 4,
-        "lineCount": 4,
         "code": [
           {
-            "text": ".card {\n  display: grid;\n  gap: ",
-            "className": ""
+            "text": ".card {\n  display: grid;\n  gap: "
           },
           {
             "text": "var(--gap)",
             "className": "text-sky-400"
           },
           {
-            "text": ";\n}",
-            "className": ""
+            "text": ";\n}"
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -170,7 +165,6 @@
         "fileExtension": ".js",
         "color": "#E0A800",
         "confidence": 5,
-        "lineCount": 4,
         "code": [
           {
             "text": "async function ",
@@ -181,8 +175,7 @@
             "className": "text-amber-300"
           },
           {
-            "text": "() {\n  const res = await fetch(url);\n  return res.json();\n}",
-            "className": ""
+            "text": "() {\n  const res = await fetch(url);\n  return res.json();\n}"
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -198,7 +191,6 @@
         "fileExtension": ".jsx",
         "color": "#16A5C6",
         "confidence": 4,
-        "lineCount": 3,
         "code": [
           {
             "text": "function ",
@@ -209,24 +201,21 @@
             "className": "text-amber-300"
           },
           {
-            "text": "({ title }) {\n  return ",
-            "className": ""
+            "text": "({ title }) {\n  return "
           },
           {
             "text": "<h2>",
             "className": "text-sky-400"
           },
           {
-            "text": "{title}",
-            "className": ""
+            "text": "{title}"
           },
           {
             "text": "</h2>",
             "className": "text-sky-400"
           },
           {
-            "text": ";\n}",
-            "className": ""
+            "text": ";\n}"
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -242,7 +231,6 @@
         "fileExtension": ".py",
         "color": "#2E9E5B",
         "confidence": 5,
-        "lineCount": 2,
         "code": [
           {
             "text": "def ",
@@ -253,8 +241,7 @@
             "className": "text-amber-300"
           },
           {
-            "text": "(name):\n    return f\"Hello, {name}\"",
-            "className": ""
+            "text": "(name):\n    return f\"Hello, {name}\""
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -270,23 +257,20 @@
         "fileExtension": ".cpp",
         "color": "#DC2626",
         "confidence": 4,
-        "lineCount": 4,
         "code": [
           {
             "text": "template <class T>\n",
             "className": "text-sky-400"
           },
           {
-            "text": "T ",
-            "className": ""
+            "text": "T "
           },
           {
             "text": "max",
             "className": "text-amber-300"
           },
           {
-            "text": "(T a, T b) {\n  return a > b ? a : b;\n}",
-            "className": ""
+            "text": "(T a, T b) {\n  return a > b ? a : b;\n}"
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -301,7 +285,6 @@
         "fileExtension": ".c",
         "color": "#6A5ACD",
         "confidence": 4,
-        "lineCount": 4,
         "code": [
           {
             "text": "int *",
@@ -312,8 +295,7 @@
             "className": "text-amber-300"
           },
           {
-            "text": "(int n) {\n  int *p = malloc(n);\n  return p;\n}",
-            "className": ""
+            "text": "(int n) {\n  int *p = malloc(n);\n  return p;\n}"
           }
         ],
         "useWith": "SKILL CARD: One sentence on how you use this language, such as the tasks or features it covers.",
@@ -325,10 +307,10 @@
     ]
   },
   "projects": {
-    "_comment": "The projects grid and its filter buttons.",
+    "_comment": "The project list and its filter buttons. Each project's Live Site and Source Code links appear in the Preview popup, not on the list itself.",
     "sectionTitle": "PROJECTS SECTION: Title above the project list",
     "sectionDescription": "PROJECTS SECTION: A short intro describing the kinds of projects below, such as client work, side projects, or coursework.",
-    "_filtersGuide": "Each filter button needs a 'label' (the text on the button). The 'All' button has no 'languages' field and always shows every project. Every other button needs a 'languages' array — a project shows under that filter if any of its own 'language' values are in this list. Group languages together the way 'C / C++' does below if you want one button to match more than one language.",
+    "_filtersGuide": "Each filter button needs a 'label' (the text on the button), and labels must be unique. The first filter is selected when the page loads, so keep 'All' first. A filter with no 'languages' field (like 'All') shows every project. Any other filter needs a 'languages' array — a project shows under that filter if any of its own 'language' values appear in this list. The spelling and capitalization must match exactly, and a project whose languages aren't in any filter only shows under 'All'. Group languages together the way 'C / C++' does below if you want one button to match more than one language.",
     "filters": [
       {
         "label": "All"
@@ -361,7 +343,7 @@
         ]
       }
     ],
-    "_projectListGuide": "Each object below is one project card. Fields: name; description; language (an array of strings — use the exact spelling 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C', or 'C++' so the filters above match correctly); hasLive (true or false — whether to show a live-site link); liveUrl (only needed when hasLive is true); sourceUrl (link to the code); images (an array of image paths — leave it as [] to show a placeholder box instead of a photo). Each project 'name' must be unique. To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
+    "_projectListGuide": "Each object below is one project card. Fields: name (must be unique); description (line breaks are kept in the Preview popup); language (required — an array of strings that must match the 'languages' values in the filters above exactly; this file uses 'HTML', 'CSS', 'JS', 'JSX', 'Python', 'C' and 'C++'); hasLive (set to true to show a Live Site button in the Preview popup, and leave the field out for projects with no live site); liveUrl (only needed when hasLive is true); sourceUrl (link for the Source Code button, which is always shown); images (required — an array of image paths, with the files in the project's 'public' folder; the first one is the thumbnail and all of them show in the Preview popup; leave it as [] to show a placeholder box instead of a photo). To add a project, copy one whole { ... } block below, including the comma before the next one, and edit every field.",
     "projectList": [
       {
         "name": "Project 1: Web Project (HTML, CSS, JS)",
@@ -392,11 +374,10 @@
       },
       {
         "name": "Project 3: Python Project",
-        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one has no live link (hasLive is false), so only the Source Code button appears in its preview.",
+        "description": "PROJECT CARD: Two or three sentences on what the project is, what it does, and what you built. This one has no live link (it has no hasLive field), so only the Source Code button appears in its preview.",
         "language": [
           "Python"
         ],
-        "hasLive": false,
         "sourceUrl": "https://github.com/your-username/python-project",
         "images": []
       },
@@ -406,7 +387,6 @@
         "language": [
           "C"
         ],
-        "hasLive": false,
         "sourceUrl": "https://github.com/your-username/c-project",
         "images": []
       },
@@ -417,7 +397,6 @@
           "C",
           "C++"
         ],
-        "hasLive": false,
         "sourceUrl": "https://github.com/your-username/c-cpp-project",
         "images": []
       },
@@ -436,13 +415,24 @@
     ]
   },
   "contact": {
-    "_comment": "The closing section. 'email', 'github', 'linkedin' and 'facebook' show as contact links — 'github', 'linkedin' and 'facebook' should be full links starting with https://. 'formNote' is the small print shown under the message form.",
+    "_comment": "The closing section. 'email' is shown as plain text with a Copy button (it is not a mailto link, and it also appears in the form's error messages). 'links' is a list of other contact links shown under the email, in the order listed. Each item needs a 'label' (the name shown on the left) and a full 'url' starting with https://. To add one, copy a whole { ... } block (including the comma before the next one) and edit it. 'formNote' is the small print under the message form, and it is also the message shown in green after a message is sent successfully, so write something that reads well both before and after sending. The form sends through Web3Forms and needs your access key in a VITE_WEB3FORMS_KEY environment variable.",
     "sectionTitle": "CONTACT SECTION: Title above the contact details",
     "sectionDescription": "CONTACT SECTION: A short invitation to get in touch, including how quickly you reply.",
-    "email": "your.email@example.com",
-    "github": "https://github.com/your-username",
-    "linkedin": "https://www.linkedin.com/in/your-profile",
-    "facebook": "https://www.facebook.com/your-profile",
-    "formNote": "CONTACT FORM NOTE: Small print under the message form, such as what happens when the visitor presses send."
+    "email": "danieljmanaloto@gmail.com",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/DanielManaloto"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/daniel-james-manaloto-71a353318"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/danieljames.manaloto"
+      }
+    ],
+    "formNote": "CONTACT FORM NOTE: One short sentence that reads well both before and after sending, such as 'Messages go straight to my inbox and I reply as soon as I can.'"
   }
 }
