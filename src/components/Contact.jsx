@@ -4,6 +4,9 @@ import content from "../content.json";
 
 const contacts = content.contact;
 
+// Show a clean version of the URL (no https:// or www.)
+const displayUrl = (url) => url.replace(/^https?:\/\/(www\.)?/, "");
+
 function Contact() {
   const [copied, setCopied] = useState(false);
 
@@ -36,8 +39,8 @@ function Contact() {
 
         <div className="w-full">
           {/* Email */}
-          <div className="flex flex-col gap-2 border-y border-border  p-3 md:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-16">Email</span>
+          <div className="flex flex-col gap-2 border-y border-border p-3 md:flex-row sm:items-center sm:gap-4">
+            <span className="shrink-0 font-medium sm:w-20">Email</span>
 
             <span className="min-w-0 break-all text-sm sm:text-base">
               {contacts.email}
@@ -51,32 +54,24 @@ function Contact() {
             </button>
           </div>
 
-          {/* Github */}
-          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-16">Github</span>
+          {/* Other links (GitHub, LinkedIn, Facebook, ...) */}
+          {contacts.links?.map((link) => (
+            <div
+              key={link.label}
+              className="flex flex-col gap-2 border-b border-border p-3 sm:flex-row sm:items-center sm:gap-4"
+            >
+              <span className="shrink-0 font-medium sm:w-20">{link.label}</span>
 
-            <a href={`${contacts.github}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
-              {contacts.github.slice(8,100)}
-            </a>
-          </div>
-
-          {/* LinkedIn */}
-          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-16">LinkedIn</span>
-
-            <a href={`${contacts.linkedin}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
-              {contacts.linkedin}
-            </a>
-          </div>
-
-          {/* Facebook */}
-          <div className="flex flex-col gap-2 border-b border-border  p-3 sm:flex-row sm:items-center sm:gap-4">
-            <span className="shrink-0 font-medium sm:w-16">Facebook</span>
-
-            <a href={`${contacts.facebook}`} className="min-w-0 break-all text-sm sm:text-base hover:underline">
-              {contacts.facebook}
-            </a>
-          </div>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-w-0 break-all text-sm sm:text-base hover:underline"
+              >
+                {displayUrl(link.url)}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
 
