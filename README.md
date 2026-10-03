@@ -4,7 +4,7 @@ A single-page portfolio template built with React, Vite and Tailwind CSS. All te
 
 **Live demo:** [Demo](https://portfolio-template-lac-sigma.vercel.app/)
 
-![Portfolio template preview](public\Portfolio-Template-preview.gif)
+![Portfolio template preview](preview.gif)
 
 ## Table of Contents
 
