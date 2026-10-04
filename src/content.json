@@ -418,19 +418,15 @@
     "_comment": "The closing section. 'email' is shown as plain text with a Copy button (it is not a mailto link, and it also appears in the form's error messages). 'links' is a list of other contact links shown under the email, in the order listed. Each item needs a 'label' (the name shown on the left) and a full 'url' starting with https://. To add one, copy a whole { ... } block (including the comma before the next one) and edit it. 'formNote' is the small print under the message form, and it is also the message shown in green after a message is sent successfully, so write something that reads well both before and after sending. The form sends through Web3Forms and needs your access key in a VITE_WEB3FORMS_KEY environment variable.",
     "sectionTitle": "CONTACT SECTION: Title above the contact details",
     "sectionDescription": "CONTACT SECTION: A short invitation to get in touch, including how quickly you reply.",
-    "email": "danieljmanaloto@gmail.com",
+    "email": "yourEmail@email.com",
     "links": [
       {
         "label": "GitHub",
-        "url": "https://github.com/DanielManaloto"
+        "url": "https://github.com/yourGitHub"
       },
       {
         "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/daniel-james-manaloto-71a353318"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/danieljames.manaloto"
+        "url": "https://www.linkedin.com/in/yourLinkedIn"
       }
     ],
     "formNote": "CONTACT FORM NOTE: One short sentence that reads well both before and after sending, such as 'Messages go straight to my inbox and I reply as soon as I can.'"
