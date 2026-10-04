@@ -45,7 +45,7 @@ const statusLabels = {
 
 function Home() {
   return (
-    <div className="min-h-screen w-full flex max-sm:flex-col gap-10 items-center justify-between pt-16">
+    <div className="min-h-screen w-full flex max-lg:flex-col gap-10 items-center justify-between pt-16">
       <div className="flex flex-col gap-3 w-full">
         <h1>{home.name}</h1>
         <h3>{home.role}</h3>

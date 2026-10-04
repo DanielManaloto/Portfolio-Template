@@ -10,10 +10,10 @@ import { Analytics } from '@vercel/analytics/react';
 function App() {
   useSiteMeta();
   return (
-    <div className="w-full min-h-screen bg-background text-foreground sm:px-55 px-5">
+    <div className="w-full min-h-screen bg-background text-foreground">
       <Navbar />
 
-      <main className="w-full">
+      <main className="w-full md:px-[clamp(60px,15vw,13.75rem)] sm:px-20 px-5">
         <section id="home" className="bg-background w-full min-h-screen">
           <Home />
         </section>

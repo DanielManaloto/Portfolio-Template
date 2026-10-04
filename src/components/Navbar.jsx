@@ -64,7 +64,7 @@ function Navbar() {
   return (
     <nav
       aria-label="Main"
-      className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background/90 px-5 backdrop-blur-md sm:px-55"
+      className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md md:px-[clamp(60px,15vw,13.75rem)] sm:px-20 px-5"
     >
       <div className="mx-auto flex min-h-15 w-full items-center justify-between gap-3">
         {/* Brand: badge only on small screens, badge + name from 561px up */}

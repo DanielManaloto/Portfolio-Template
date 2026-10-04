@@ -5,12 +5,12 @@ const facts = about.facts;
 
 function About() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-6">
+    <div className="w-full max-w-6xl mx-auto">
       <h1 className="mb-10">{about.sectionTitle}</h1>
 
-      <div className="flex max-sm:flex-col gap-10">
+      <div className="flex max-lg:flex-col gap-10">
         {/* Image */}
-        <div className="w-full sm:w-2/5">
+        <div className="w-full lg:w-2/5">
           <img
             src={`${about.imagePath}`}
             alt="Portrait"
@@ -19,7 +19,7 @@ function About() {
         </div>
 
         {/* Text */}
-        <div className="w-full sm:w-3/5">
+        <div className="w-full lg:w-3/5">
           <div className="mb-8">
             {about.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>

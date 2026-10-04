@@ -78,8 +78,8 @@ function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen p-4">
-      <div className="w-full max-w-[361px] rounded-[4px] border border-border bg-card text-card-foreground px-[26px] py-[27px]">
+    <div className="min-h-screen w-full p-4">
+      <div className="w-full rounded-[4px] border border-border bg-card text-card-foreground px-[26px] py-[27px]">
         <form className="space-y-0" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name" className={labelClass}>
